@@ -1,6 +1,6 @@
 # Bishal's Portfolio [Live](https://shiv-s-portfolio.vercel.app) - 👌 Best NextJS Portfolio
 
-![Welcome Screen](https://shiv-s-portfolio.vercel.app/images/welcome-screen.png)
+![Welcome Screen](url)
 
 ## Table of content
 
