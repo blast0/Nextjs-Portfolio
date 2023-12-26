@@ -33,7 +33,7 @@ const Home = () => {
         {/* <!-- Open Graph / Facebook --> */}
         <meta content="website" property="og:type" />
         <meta content="https://bishalkumar-sde.netlify.app" property="og:url" />
-        <meta content="Shiv's Portfolio" property="og:title" />
+        <meta content="Bishal's Portfolio" property="og:title" />
         <meta
           content="Explore the best Next.js and React.js portfolio by Bishal Kumar. Featuring simple, dark and light theme designs and mobile responsiveness."
           property="og:description"
