@@ -45,13 +45,13 @@ const Experience = () => {
           {ExperienceData.map((experience, index) =>
             experience.side === "left" ? (
               <div
-                className={`md:flex gap-2 items-end transition-all duration-500 ${
+                className={`md:flex gap-2 transition-all duration-500 ${
                   index !== 0 ? "mt-7" : ""
                 }`}
                 key={experience.companyName}
               >
                 <div
-                  className="md:w-[45%] cursor-pointer p-3 border border-zinc-300 dark:border-zinc-700 shadow-zinc-300 dark:shadow-zinc-700 shadow-sm rounded"
+                  className="md:w-[45%] flex flex-col items-stretch cursor-pointer p-3 border border-zinc-300 dark:border-zinc-700 shadow-zinc-300 dark:shadow-zinc-700 shadow-sm rounded"
                   onClick={() =>
                     setDesc(
                       desc === experience.description
@@ -75,11 +75,11 @@ const Experience = () => {
                   </div>
 
                   <p
-                    className="whitespace-pre-wrap mt-2 text-justify transition-all duration-500 overflow-hidden text-gray-700 dark:text-gray-500"
+                    className="mt-2 text-justify transition-all duration-500 overflow-hidden text-gray-700 dark:text-gray-500"
                     style={
                       desc == experience.description
-                        ? { maxHeight: "1500px" }
-                        : { maxHeight: "0px" }
+                        ? { maxHeight: "400px" }
+                        : { maxHeight: "100px" }
                     }
                   >
                     {experience.description}
@@ -109,7 +109,7 @@ const Experience = () => {
                 key={experience.companyName}
               >
                 <div
-                  className="md:w-[45%] cursor-pointer  transition-all duration-500 p-3 border border-zinc-300 dark:border-zinc-700 shadow-zinc-300 dark:shadow-zinc-700 shadow-smrounded"
+                  className="md:w-[45%] flex flex-col items-stretch  cursor-pointer  transition-all duration-500 p-3 border border-zinc-300 dark:border-zinc-700 shadow-zinc-300 dark:shadow-zinc-700 shadow-smrounded"
                   onClick={() =>
                     setDesc(
                       desc === experience.description
@@ -132,17 +132,17 @@ const Experience = () => {
                     <p>{experience.fromTo}</p>
                   </div>
                   <p
-                    className="whitespace-pre-wrap mt-2 overflow-hidden transition-all duration-500 text-justify text-gray-700 dark:text-gray-500"
+                    className="mt-2 overflow-hidden transition-all duration-500 text-justify text-gray-700 dark:text-gray-500"
                     style={
                       desc == experience.description
                         ? { maxHeight: "400px" }
-                        : { maxHeight: "0px" }
+                        : { maxHeight: "100px" }
                     }
                   >
                     {experience.description}
                   </p>
                   <button
-                    className="hidden md:block"
+                    className="transition-all duration-500 hidden md:block"
                     onClick={() =>
                       setDesc(
                         desc === experience.description
