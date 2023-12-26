@@ -1,5 +1,5 @@
 import React from "react";
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
 
 const GreetingLottie = ({ animationPath }) => {
   const defaultOptions = {
@@ -9,9 +9,7 @@ const GreetingLottie = ({ animationPath }) => {
   };
 
   return (
-    <div onClick={() => null}>
-      <Lottie options={defaultOptions} />
-    </div>
+    <div onClick={() => null}>{/* <Lottie options={defaultOptions} /> */}</div>
   );
 };
 
