@@ -75,10 +75,10 @@ const Experience = () => {
                   </div>
 
                   <p
-                    className="mt-2 text-justify transition-all duration-500 overflow-hidden text-gray-700 dark:text-gray-500"
+                    className="whitespace-pre-wrap mt-2 text-justify transition-all duration-500 overflow-hidden text-gray-700 dark:text-gray-500"
                     style={
                       desc == experience.description
-                        ? { maxHeight: "400px" }
+                        ? { maxHeight: "1500px" }
                         : { maxHeight: "0px" }
                     }
                   >
@@ -132,7 +132,7 @@ const Experience = () => {
                     <p>{experience.fromTo}</p>
                   </div>
                   <p
-                    className="mt-2 overflow-hidden transition-all duration-500 text-justify text-gray-700 dark:text-gray-500"
+                    className="whitespace-pre-wrap mt-2 overflow-hidden transition-all duration-500 text-justify text-gray-700 dark:text-gray-500"
                     style={
                       desc == experience.description
                         ? { maxHeight: "400px" }

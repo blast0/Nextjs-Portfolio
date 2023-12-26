@@ -1,8 +1,7 @@
 export const EducationData = [
   {
     name: "Bachelor of Technology (CSE)",
-    image:
-      "https://images.shiksha.com/mediadata/images/1618476358phpdlIFKQ.jpeg",
+    image: "/images/college.jpeg",
     schoolOrCollege: "Assam Science and Technology University",
     fromTo: "2014 - 2021",
     statusOrPrecentage: "58.4%",

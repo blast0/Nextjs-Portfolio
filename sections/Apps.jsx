@@ -11,23 +11,23 @@ const Apps = () => {
 
   return (
     <Fragment>
-      <div className='py-8 pt-4 shadow-zinc-300 dark:shadow-zinc-700 shadow-sm'>
-        <section id='apps' />
-        <h3 className='text-3xl font-bold text-center pb-8 flex justify-center items-center gap-3'>
-          <span className='mr-3'>
+      <div className="py-8 pt-4 shadow-zinc-300 dark:shadow-zinc-700 shadow-sm">
+        <section id="apps" />
+        <h3 className="text-3xl font-bold text-center pb-8 flex justify-center items-center gap-3">
+          <span className="mr-3">
             {" "}
             <IoMdAppstore />
           </span>{" "}
           Apps
         </h3>
 
-        <div className='md:grid hidden md:grid-cols-5 grid-cols-3 justify-center mx-8 gap-5'>
+        <div className="md:flex hidden md:grid-cols-8 grid-cols-5 justify-center mx-8 gap-5 content-center">
           {AppsData.map((app, key) => (
-            <div className='overflow-hidden' key={key}>
+            <div className="overflow-hidden" key={key}>
               <Link href={`/${app.linkName}`}>
                 <Image
-                  alt='app'
-                  className='object-cover rounded md:rounded-[30px] w-full'
+                  alt="app"
+                  className="object-cover rounded md:rounded-[30px] w-full"
                   height={500}
                   src={theme === "dark" ? app.imageUrl : app.imageLight}
                   width={250}
@@ -47,21 +47,21 @@ export default Apps;
 
 const MobileScreenApps = () => {
   return (
-    <div className='md:hidden gap-6 grid grid-cols-4 px-8 pb-10'>
+    <div className="md:hidden gap-6 grid grid-cols-4 px-8 pb-10">
       {AppsData.map((app, key) => (
         <div key={key}>
           <Link href={`/${app.linkName}`}>
-            <div className='p-3 rounded-xl bg-[pink] dark:bg-[aqua]'>
+            <div className="p-3 rounded-xl bg-[pink] dark:bg-[aqua]">
               <Image
                 alt={app.name}
-                className='object-cover'
+                className="object-cover"
                 height={150}
                 src={app.iconUrl}
                 width={150}
               />
             </div>
           </Link>
-          <p className='text-center text-xs py-1'>{app.name}</p>
+          <p className="text-center text-xs py-1">{app.name}</p>
         </div>
       ))}
     </div>

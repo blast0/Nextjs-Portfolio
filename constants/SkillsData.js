@@ -11,11 +11,18 @@ import {
   SiChakraui,
   SiFirebase,
   SiTypescript,
-  SiJquery
+  SiJquery,
 } from "react-icons/si";
 import { DiJavascript1, DiReact, DiMongodb, DiSass } from "react-icons/di";
 import { BsGit, BsGithub } from "react-icons/bs";
-import { FaBootstrap, FaCss3Alt, FaAngular, FaPhp, FaShopify, FaJava } from "react-icons/fa";
+import {
+  FaBootstrap,
+  FaCss3Alt,
+  FaAngular,
+  FaPhp,
+  FaShopify,
+  FaJava,
+} from "react-icons/fa";
 import { TbBrandReactNative } from "react-icons/tb";
 import { GrMysql } from "react-icons/gr";
 
@@ -28,7 +35,9 @@ export const TechStackData = [
       },
       {
         name: "JavaScript",
-        icon: <DiJavascript1 className="md:text-4xl text-2xl" color="#ffd600" />,
+        icon: (
+          <DiJavascript1 className="md:text-4xl text-2xl" color="#ffd600" />
+        ),
       },
       {
         name: "Redux-toolkit",
@@ -48,29 +57,35 @@ export const TechStackData = [
       },
       {
         name: "Tailwind CSS",
-        icon: <SiTailwindcss className="md:text-4xl text-2xl" color="#4caf50" />,
+        icon: (
+          <SiTailwindcss className="md:text-4xl text-2xl" color="#4caf50" />
+        ),
       },
       {
         name: "Meterial UI",
         icon: <SiMui className="md:text-4xl text-2xl" color="#29b6f6" />,
       },
-      {
-        name: "Chakra UI",
-        icon: <SiChakraui className="md:text-4xl text-2xsl" color="#50cbc0" />
-      },
+      // {
+      //   name: "Chakra UI",
+      //   icon: <SiChakraui className="md:text-4xl text-2xsl" color="#50cbc0" />
+      // },
       {
         name: "Vercel",
-        icon: <SiVercel className="dark:text-white text-black md:text-4xl text-2xl" />
+        icon: (
+          <SiVercel className="dark:text-white text-black md:text-4xl text-2xl" />
+        ),
       },
       {
         name: "Github",
-        icon: <BsGithub className="md:text-4xl text-2xl" color="#c9d1d9" />
+        icon: <BsGithub className="md:text-4xl text-2xl" color="#c9d1d9" />,
       },
     ],
     Good: [
       {
         name: "NextJS",
-        icon: <SiNextdotjs className="md:text-4xl text-2xl dark:text-white text-black" />
+        icon: (
+          <SiNextdotjs className="md:text-4xl text-2xl dark:text-white text-black" />
+        ),
       },
       {
         name: "NodeJS",
@@ -86,42 +101,46 @@ export const TechStackData = [
       },
       {
         name: "firebase",
-        icon: <SiFirebase className="md:text-4xl text-2xl" color="#ffcd33" />
+        icon: <SiFirebase className="md:text-4xl text-2xl" color="#ffcd33" />,
       },
       {
         name: "jQuery",
-        icon: <SiJquery className="md:text-4xl text-2xsl" color="#106dae" />
+        icon: <SiJquery className="md:text-4xl text-2xsl" color="#106dae" />,
       },
       {
         name: "netlify",
-        icon: <SiNetlify className="md:text-4xl text-2xl" color={"#31b5ba"} />
+        icon: <SiNetlify className="md:text-4xl text-2xl" color={"#31b5ba"} />,
       },
       {
         name: "Git",
-        icon: <BsGit className="md:text-4xl text-2xl" color="#f4511e" />
+        icon: <BsGit className="md:text-4xl text-2xl" color="#f4511e" />,
       },
-
     ],
     Familiar: [
       {
         name: "TypeScript",
-        icon: <SiTypescript className="md:text-4xl text-2xl" color="#377cc8" />
+        icon: <SiTypescript className="md:text-4xl text-2xl" color="#377cc8" />,
       },
       {
         name: "Angular",
-        icon: <FaAngular className="md:text-4xl text-2xl" color="#c50836" />
+        icon: <FaAngular className="md:text-4xl text-2xl" color="#c50836" />,
       },
       {
         name: "React Native",
-        icon: <TbBrandReactNative className="md:text-4xl text-2xl" color="#66dbfb" />
+        icon: (
+          <TbBrandReactNative
+            className="md:text-4xl text-2xl"
+            color="#66dbfb"
+          />
+        ),
       },
       {
         name: "PHP",
-        icon: <FaPhp className="md:text-4xl text-2xl" color="#7b7fb5" />
+        icon: <FaPhp className="md:text-4xl text-2xl" color="#7b7fb5" />,
       },
       {
         name: "JAVA",
-        icon: <FaJava className="md:text-4xl text-2xl" color="#547c99" />
+        icon: <FaJava className="md:text-4xl text-2xl" color="#547c99" />,
       },
       {
         name: "SASS",
@@ -129,13 +148,12 @@ export const TechStackData = [
       },
       {
         name: "MySQL",
-        icon: <GrMysql className="md:text-4xl text-2xl" color="#08668e" />
+        icon: <GrMysql className="md:text-4xl text-2xl" color="#08668e" />,
       },
       {
         name: "Shopify",
-        icon: <FaShopify className="md:text-4xl text-2xl" color="#99c14f" />
-      }
-    ]
-
-  }
-]
+        icon: <FaShopify className="md:text-4xl text-2xl" color="#99c14f" />,
+      },
+    ],
+  },
+];

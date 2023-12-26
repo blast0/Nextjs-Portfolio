@@ -26,10 +26,12 @@ const nextConfig = {
       "nextjs.org",
       "www.spsghy.co.in",
       "sfsguwahati.edu.in",
+      "drive.google.com",
       "http://res.cloudinary.com",
       "https://images.shiksha.com",
       "https://www.spsghy.co.in",
       "https://sfsguwahati.edu.in",
+      "https://drive.google.com",
     ],
   },
   eslint: {

@@ -2,6 +2,7 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
+import GreetingLottie from "./DisplayLottie";
 
 const Intro = () => {
   const [isHome, setIsHome] = useState(false);
@@ -42,9 +43,9 @@ const Intro = () => {
 
   return (
     <Fragment>
-      <Head>
+      {/* <Head>
         <title>Bishal&apos;s Portfolio</title>
-      </Head>
+      </Head> */}
       <section id="home">
         <div
           className="min-h-[100vh] overflow-x-hidden px-[20px] md:px-[200px] lg:px-[200px] pt-[80px] md:pt-0 md:flex items-center justify-between shadow-zinc-300 dark:shadow-zinc-700 shadow-sm"
@@ -83,14 +84,25 @@ const Intro = () => {
               </Link>
             </div>
           </div>
-
+          <div
+            style={{
+              width: "200px",
+              height: "200px",
+            }}
+          >
+            <GreetingLottie animationPath="/lottie/coding.json" />
+          </div>
           {/* Image */}
           <div
             className={
-              "translate-x-[500px] transition-all opacity-0 duration-700 w-[180px] h-[300px] md:w-[240px] md:h-[400px] bg-cover m-auto md:m-0 mt-[40px] md:mt-0 bg-no-repeat"
+              "translate-x-[500px] transition-all opacity-0 duration-700 w-[220px] h-[300px] md:w-[400px] md:h-[500px] bg-cover m-auto md:m-0 mt-[40px] md:mt-0 bg-no-repeat"
             }
             ref={profileRef}
-            style={{ backgroundImage: "url(/images/male.png)" }}
+            style={{
+              backgroundImage: "url(/images/male.jpg)",
+              backgroundPositionX: "center",
+              borderRadius: "10%",
+            }}
           />
         </div>
       </section>

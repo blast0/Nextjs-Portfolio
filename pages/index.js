@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <Fragment>
       <Head>
-        <title>Bishal&apos;s Portfolio</title>
+        {/* <title>Bishal&apos;s Portfolio</title> */}
         {/* <!-- Primary Meta Tags --> */}
         <meta content="Bishal's Portfolio" name="title" />
         <meta
