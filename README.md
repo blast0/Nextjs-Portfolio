@@ -2,7 +2,7 @@
 
 ![Welcome Screen](https://bishalkumar-sde.netlify.app/images/welcome-screen.png)
 
-![Welcome Screen 2](https://bishalkumar-sde.netlify.app/images/welcome-screen2.png)
+![Welcome Screen](https://bishalkumar-sde.netlify.app/images/welcome-screen2.png)
 
 ## Table of content
 
