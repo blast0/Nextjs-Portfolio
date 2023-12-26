@@ -1,6 +1,6 @@
-# Bishal's Portfolio [Live](https://shiv-s-portfolio.vercel.app) - 👌 Best NextJS Portfolio
+# Bishal's Portfolio [Live](https://bishalkumar-sde.netlify.app) - 👌 Best NextJS Portfolio
 
-![Welcome Screen](url)
+![Welcome Screen](/images/welcome-screen.png)
 
 ## Table of content
 
@@ -24,12 +24,12 @@
 
 ## 2. Sections 🧱
 
-1. [Home | Intro | Welcome](https://shiv-s-portfolio.vercel.app)
-2. [Skills](https://shiv-s-portfolio.vercel.app/#skills)
-3. [Projects](https://shiv-s-portfolio.vercel.app/#projects)
-4. [Blogs](https://shiv-s-portfolio.vercel.app/#blogs)
-5. [My Journey](https://shiv-s-portfolio.vercel.app/#myJourney)
-6. [Apps](https://shiv-s-portfolio.vercel.app/#apps)
+1. [Home | Intro | Welcome](https://bishalkumar-sde.netlify.app)
+2. [Skills](https://bishalkumar-sde.netlify.app/#skills)
+3. [Projects](https://bishalkumar-sde.netlify.app/#projects)
+4. [Blogs](https://bishalkumar-sde.netlify.app/#blogs)
+5. [My Journey](https://bishalkumar-sde.netlify.app/#myJourney)
+6. [Apps](https://bishalkumar-sde.netlify.app/#apps)
 
 ## 3. Tech Stack 💻
 
@@ -55,7 +55,7 @@ Follow these steps to set up and run the project on your local machine.
 To get a local copy of this repository, run the following command in your terminal:
 
 ```sh
-git clone https://github.com/iamshiv007/Next-Portfolio.git
+git clone https://github.com/blast0/Nextjs-Portfolio.git
 ```
 
 #### 2. Navigate to the Project
