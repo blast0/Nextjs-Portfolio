@@ -32,24 +32,24 @@ const Home = () => {
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta content="website" property="og:type" />
-        <meta content="https://shiv-s-portfolio.vercel.app" property="og:url" />
+        <meta content="https://bishalkumar-sde.netlify.app" property="og:url" />
         <meta content="Shiv's Portfolio" property="og:title" />
         <meta
           content="Explore the best Next.js and React.js portfolio by Bishal Kumar. Featuring simple, dark and light theme designs and mobile responsiveness."
           property="og:description"
         />
         <meta
-          content="https://shiv-s-portfolio.vercel.app/images/welcome-screen.png"
+          content="https://bishalkumar-sde.netlify.app/images/welcome-screen.png"
           property="og:image"
         />
 
         {/* <!-- Twitter --> */}
         <meta
-          content="https://shiv-s-portfolio.vercel.app/images/welcome-screen.png"
+          content="https://bishalkumar-sde.netlify.app/images/welcome-screen.png"
           property="twitter:card"
         />
         <meta
-          content="https://shiv-s-portfolio.vercel.app"
+          content="https://bishalkumar-sde.netlify.app"
           property="twitter:url"
         />
         <meta content="Bishal Kumar - Portfolio" property="twitter:title" />
@@ -58,7 +58,7 @@ const Home = () => {
           property="twitter:description"
         />
         <meta
-          content="https://shiv-s-portfolio.vercel.app/images/welcome-screen.png"
+          content="https://bishalkumar-sde.netlify.app/images/welcome-screen.png"
           property="twitter:image"
         />
 
@@ -72,7 +72,7 @@ const Home = () => {
 
         {/* <!-- Favicon --> */}
         <link
-          href="https://shiv-s-portfolio.vercel.app/favicon.ico"
+          href="https://bishalkumar-sde.netlify.app/favicon.ico"
           rel="icon"
           type="image/x-icon"
         />
@@ -85,7 +85,7 @@ const Home = () => {
           <Skills />
           <Education />
           <Experience />
-          <Projects />
+          {/* <Projects /> */}
           <SocialMedia />
           <LatestBlogs />
           <Apps />
