@@ -7,10 +7,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const NavbarMobile = ({ setShowMenu, setThemeFun, theme, showMenu, top }) => {
   return (
     //  Mobile Header
-    <div
-      className="w-full px-5 py-3 bg-[#ffffffcc] dark:bg-[#000000cc] backdrop-filter backdrop-blur-lg flex justify-between md:hidden shadow-md shadow-gray-300 dark:shadow-gray-800 fixed z-10"
-      style={{ top }}
-    >
+    <div className="w-full px-5 py-3 bg-[#ffffffcc] dark:bg-[#000000cc] backdrop-filter backdrop-blur-lg flex justify-between md:hidden shadow-md shadow-gray-300 dark:shadow-gray-800 fixed z-10">
       <div className="flex items-center gap-4">
         {/* Open Sidebar Button */}
         <button

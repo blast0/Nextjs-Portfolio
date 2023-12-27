@@ -48,11 +48,11 @@ const Intro = () => {
       </Head> */}
       <section id="home">
         <div
-          className="min-h-[100vh] overflow-x-hidden px-[20px] md:px-[200px] lg:px-[200px] pt-[80px] md:pt-0 md:flex items-center justify-between shadow-zinc-300 dark:shadow-zinc-700 shadow-sm"
+          className="min-h-[100vh] overflow-x-hidden px-[20px] md:px-[200px] lg:px-[200px] pt-[80px] md:pt-0 md:flex items-center justify-around shadow-zinc-300 dark:shadow-zinc-700 shadow-sm"
           ref={homeRef}
         >
           <div
-            className="translate-x-[-500px] transition-all duration-700 opacity-0"
+            className="translate-x-[-500px] transition-all duration-700 opacity-0 flex flex-col items-center"
             ref={introRef}
           >
             <p className="py-2 text-2xl md:text-4xl font-semibold font-sans">
@@ -83,19 +83,19 @@ const Intro = () => {
                 Download CV
               </Link>
             </div>
-          </div>
-          <div
-            style={{
-              width: "200px",
-              height: "200px",
-            }}
-          >
-            <GreetingLottie animationPath="/lottie/coding.json" />
+            <div
+              style={{
+                width: "100%",
+                maxWidth: "400px",
+              }}
+            >
+              <GreetingLottie animationPath="/lottie/coding.json" />
+            </div>
           </div>
           {/* Image */}
           <div
             className={
-              "translate-x-[500px] transition-all opacity-0 duration-700 w-[220px] h-[300px] md:w-[400px] md:h-[500px] bg-cover m-auto md:m-0 mt-[40px] md:mt-0 bg-no-repeat"
+              "translate-x-[500px] transition-all opacity-0 duration-700 w-[250px] h-[400px] md:w-[400px] md:h-[500px] bg-cover m-auto md:m-0 mt-[40px] md:mt-0 bg-no-repeat"
             }
             ref={profileRef}
             style={{
@@ -103,7 +103,7 @@ const Intro = () => {
               backgroundPositionX: "center",
               borderRadius: "10%",
             }}
-          />
+          ></div>
         </div>
       </section>
     </Fragment>

@@ -3,7 +3,7 @@ export const AppsData = [
     name: "Tic-Tac-Toe",
     imageUrl: "/images/tic-tac-toe.png",
     imageLight: "/images/tic-tac-toe-l.png",
-    iconUrl: "/images/tic-tac-toe.ico",
+    iconUrl: "/images/tic-tac-toe-s.png",
     linkName: "apps/tic-tac-toe",
     date: "June 9, 2023",
   },

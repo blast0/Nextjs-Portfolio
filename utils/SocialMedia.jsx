@@ -10,9 +10,9 @@ const SocialMedia = () => {
 
   return (
     <Fragment>
-      <div className='absolute left-14 bottom-10 flex flex-col gap-4 z-10'>
+      <div className="absolute left-5 bottom-20 flex flex-col gap-4 z-1 top-[320px]">
         {SocialMediaData.map((social, key) => (
-          <Link className='w-fit' href={social.link} key={key}>
+          <Link className="w-fit" href={social.link} key={key}>
             <div
               className={"p-2 rounded-full text-xl text-white"}
               style={{ background: social.color }}
@@ -22,7 +22,7 @@ const SocialMedia = () => {
           </Link>
         ))}
         <button
-          className='p-2 rounded-full text-xl bg-[#f2925a] text-white'
+          className="p-2 rounded-full text-xl bg-[#f2925a] text-white"
           onClick={() => setShowModal(true)}
         >
           <MdFeedback />

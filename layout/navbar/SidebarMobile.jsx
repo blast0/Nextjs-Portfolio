@@ -11,14 +11,14 @@ const MobileNavbar = ({ showMenu, setShowMenu }) => {
       <div
         className={`w-full h-screen bg-[rgba(255,255,255,0.3)] dark:bg-[rgba(0,0,0,0.3)] fixed ${
           showMenu ? null : "hidden"
-        } top-0 left-0 z-10`}
+        } top-0 left-0 z-10 `}
         onClick={() => setShowMenu(!showMenu)}
       >
         {/* Sidebar */}
         <div
           className={`w-[70%] h-screen bg-white dark:bg-black shadow-sm shadow-gray-600 dark:shadow-gray-300 ${
-            showMenu ? null : "translate-x-[-450px]"
-          } transition-all duration-1000`}
+            showMenu ? null : " translate-x-[-450px] "
+          } transition-all duration-500`}
         >
           <div className="p-3 bg-gray-200 dark:bg-gray-800 flex justify-between items-center gap-3">
             {/* Name Logo */}
