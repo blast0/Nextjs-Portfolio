@@ -8,15 +8,14 @@ const GreetingLottie = ({ animationPath }) => {
     path: animationPath,
   };
   const lottieRef = useRef();
+
   return (
     <div
       onClick={() => {
-        console.log(lottieRef);
-        // lottieRef.current.pause();
         lottieRef.current.setSpeed(0.3);
         setTimeout(() => {
-          lottieRef.current.play();
-        }, 1000);
+          lottieRef.current.setSpeed(1);
+        }, 2000);
       }}
       onMouseOver={() => {
         lottieRef.current.setSpeed(0.3);
@@ -24,6 +23,7 @@ const GreetingLottie = ({ animationPath }) => {
       onMouseOut={() => {
         lottieRef.current.setSpeed(1);
       }}
+      className="cursor-pointer"
     >
       <Lottie
         path={animationPath}
