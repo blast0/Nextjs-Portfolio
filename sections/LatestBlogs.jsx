@@ -19,7 +19,7 @@ const LatestBlogs = () => {
             </span>
             Blogs
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 rounded-md mx-6">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 rounded-md mx-6">
             {BlogsData.slice(-4)
               .reverse()
               .map((blog) => (

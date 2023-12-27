@@ -48,7 +48,7 @@ const Intro = () => {
       </Head> */}
       <section id="home">
         <div
-          className="min-h-[100vh] overflow-x-hidden px-[20px] md:px-[200px] lg:px-[200px] pt-[80px] md:pt-0 md:flex items-center justify-around shadow-zinc-300 dark:shadow-zinc-700 shadow-sm"
+          className="min-h-[100vh] overflow-x-hidden px-[20px] md:px-[20px] lg:px-[20px] pt-[80px] md:pt-0 md:flex items-center justify-around shadow-zinc-300 dark:shadow-zinc-700 shadow-sm"
           ref={homeRef}
         >
           <div
@@ -95,7 +95,7 @@ const Intro = () => {
           {/* Image */}
           <div
             className={
-              "translate-x-[500px] transition-all opacity-0 duration-700 w-[250px] h-[400px] md:w-[400px] md:h-[500px] bg-cover m-auto md:m-0 mt-[40px] md:mt-0 bg-no-repeat"
+              "translate-x-[500px] transition-all opacity-0 duration-700 w-[250px] h-[400px] md:w-[400px] md:h-[500px] bg-cover m-auto md:m-0 mt-[40px] md:mt-0 bg-no-repeat mb-10"
             }
             ref={profileRef}
             style={{

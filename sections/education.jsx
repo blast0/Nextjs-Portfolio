@@ -46,7 +46,7 @@ const Education = () => {
         </h2>
 
         <div
-          className="pop-down-child pb-[30px] px-[20px] md:px-[100px] lg:px-[200px] flex flex-col gap-[20px] md:gap-[50px]"
+          className="pop-down-child pb-[30px] px-[20px] md:px-[40px] lg:px-[150px] flex flex-col gap-[20px] md:gap-[50px]"
           ref={educationBoxesRef}
         >
           {EducationData.map((education) => (
