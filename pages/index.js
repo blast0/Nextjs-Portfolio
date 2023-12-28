@@ -96,9 +96,9 @@ const Home = () => {
             <ChatSystem />
           </div>
           {/* Feedback Modal */}
-          <Feedback />
+          {/* <Feedback /> */}
           {/* ShoveeModal */}
-          <ShoveeModal />
+          {/* <ShoveeModal /> */}
         </div>
       </div>
     </Fragment>

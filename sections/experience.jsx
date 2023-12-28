@@ -18,7 +18,7 @@ const Experience = () => {
         setIsExpe(expeEntry.isIntersecting);
       },
       {
-        rootMargin: "-100px",
+        rootMargin: "-200px",
       }
     );
 

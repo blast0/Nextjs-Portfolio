@@ -18,7 +18,7 @@ export const AppsData = [
   {
     name: "Translator",
     imageUrl: "/images/hindi-translator.png",
-    imageLight: "/images/hindi-translator-l.png",
+    imageLight: "/images/hinditranslatorl.png",
     iconUrl: "/images/hindi-translator.ico",
     linkName: "apps/hindi-translator",
     date: "June 21, 2023",

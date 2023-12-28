@@ -31,6 +31,7 @@ const Apps = () => {
                   height={500}
                   src={theme === "dark" ? app.imageUrl : app.imageLight}
                   width={250}
+                  key={key}
                 />
               </Link>
             </div>
@@ -48,24 +49,22 @@ export default Apps;
 const MobileScreenApps = () => {
   return (
     <div className="md:hidden gap-6 grid grid-cols-4 px-8 pb-10">
-      {AppsData
-        ? AppsData.map((app, key) => (
-            <div key={key}>
-              <Link href={`/${app.linkName}`}>
-                <div className="p-3 rounded-xl bg-[pink] dark:bg-[aqua]">
-                  <Image
-                    alt={app.name}
-                    className="object-cover"
-                    height={150}
-                    src={app.iconUrl}
-                    width={150}
-                  />
-                </div>
-              </Link>
-              <p className="text-center text-xs py-1">{app.name}</p>
+      {AppsData.map((app, key) => (
+        <div key={key}>
+          <Link href={`/${app.linkName}`}>
+            <div className="p-3 rounded-xl bg-[pink] dark:bg-[aqua]">
+              <Image
+                alt={app.name}
+                className="object-cover"
+                height={150}
+                src={app.iconUrl}
+                width={150}
+              />
             </div>
-          ))
-        : []}
+          </Link>
+          <p className="text-center text-xs py-1">{app.name}</p>
+        </div>
+      ))}
     </div>
   );
 };
