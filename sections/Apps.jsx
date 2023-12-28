@@ -59,6 +59,7 @@ const MobileScreenApps = () => {
                 height={150}
                 src={app.iconUrl}
                 width={150}
+                key={key}
               />
             </div>
           </Link>
