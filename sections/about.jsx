@@ -20,7 +20,6 @@ const About = () => {
         window.innerWidth ||
         document.documentElement.clientWidth ||
         document.body.clientWidth;
-
       const aboutObserver = new IntersectionObserver(
         ([aboutEntry]) => {
           setIsAbout(aboutEntry.isIntersecting);
@@ -29,9 +28,7 @@ const About = () => {
           rootMargin: `${getScreenWidth() <= 700 ? "-100px" : "-300px"}`,
         }
       );
-
       aboutObserver.observe(aboutRef.current);
-
       if (isAbout) {
         profile2Ref.current.classList.add("slide-in");
         aboutInfoRef.current.classList.add("slide-in");
@@ -61,7 +58,7 @@ const About = () => {
             }
             height={350}
             ref={profile2Ref}
-            src="/images/male2.png"
+            src="/images/male2.jpg"
             width={350}
           />
           <div
