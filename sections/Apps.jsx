@@ -60,6 +60,7 @@ const MobileScreenApps = () => {
                 src={app.iconUrl}
                 width={150}
                 key={key}
+                loader={() => app.iconUrl}
               />
             </div>
           </Link>
