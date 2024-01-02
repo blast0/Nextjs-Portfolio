@@ -78,28 +78,26 @@ const Home = () => {
         />
       </Head>
       <div>
-        <div>
-          <Navbar />
-          <Intro />
-          <About />
-          <Skills />
-          <Education />
-          <Experience />
-          {/* <Projects /> */}
-          <SocialMedia />
-          <LatestBlogs />
-          <Apps />
-          <SendMail />
-          <Footer />
-          <div className="z-40">
-            {/* tawk.to Chat System */}
-            <ChatSystem />
-          </div>
-          {/* Feedback Modal */}
-          {/* <Feedback /> */}
-          {/* ShoveeModal */}
-          {/* <ShoveeModal /> */}
+        <Navbar />
+        <Intro />
+        <About />
+        <Skills />
+        <Education />
+        <Experience />
+        {/* <Projects /> */}
+        <SocialMedia />
+        <LatestBlogs />
+        <Apps />
+        <SendMail />
+        <Footer />
+        <div className="z-40">
+          {/* tawk.to Chat System */}
+          <ChatSystem />
         </div>
+        {/* Feedback Modal */}
+        {/* <Feedback /> */}
+        {/* ShoveeModal */}
+        {/* <ShoveeModal /> */}
       </div>
     </Fragment>
   );

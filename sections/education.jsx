@@ -40,6 +40,10 @@ const Education = () => {
         className="shadow-zinc-300 dark:shadow-zinc-700 shadow-sm overflow-x-hidden"
         id="education"
         ref={educationRef}
+        style={{
+          paddingTop: "70px",
+          marginTop: "-70px",
+        }}
       >
         <h2 className="text-3xl font-bold text-center p-4 flex justify-center items-center gap-3">
           <IoSchoolSharp /> Education

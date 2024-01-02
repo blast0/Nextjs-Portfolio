@@ -55,6 +55,10 @@ const TechStack = () => {
         className="shadow-zinc-300 dark:shadow-zinc-700 shadow-sm overflow-hidden"
         id="techStack"
         ref={techStackRef}
+        style={{
+          paddingTop: "70px",
+          marginTop: "-70px",
+        }}
       >
         <h2 className="text-3xl font-bold text-center p-4 flex justify-center items-center gap-3">
           <FaLaptopCode /> Tech Stack
@@ -103,7 +107,7 @@ const TechStack = () => {
         </div>
 
         <div
-          className="pop-down-child flex min-h-[450px] py-[30px] px-[20px] md:px-[20px] flex-wrap justify-center items-center gap-5"
+          className="pop-down-child flex py-[30px] px-[20px] md:px-[20px] flex-wrap justify-center items-center gap-5"
           ref={techBoxesRef}
         >
           {sectionData.map((tech) => (

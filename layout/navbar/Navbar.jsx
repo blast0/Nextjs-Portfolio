@@ -2,8 +2,8 @@
 import React, { Fragment, useContext, useEffect, useState } from "react";
 import Link from "next/link";
 import { DiTechcrunch } from "react-icons/di";
-import { BsFillLightningChargeFill } from "react-icons/bs";
-import { TbBulbFilled } from "react-icons/tb";
+import SunLottie from "@/sections/SunLottie";
+import RocketLottie from "@/sections/RocketLottie";
 
 import MobileNavbar from "./SidebarMobile";
 import { NavbarMenu } from "./NavbarItems";
@@ -69,9 +69,10 @@ const Navbar = () => {
             onClick={setThemeFun}
           >
             {theme === "dark" ? (
-              <TbBulbFilled />
+              //here
+              <SunLottie animationPath="/lottie/sunlight.json" />
             ) : (
-              <BsFillLightningChargeFill />
+              <RocketLottie animationPath="/lottie/moon2.json" />
             )}
           </button>
         </div>

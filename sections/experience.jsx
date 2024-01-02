@@ -33,7 +33,14 @@ const Experience = () => {
 
   return (
     <Fragment>
-      <section id="experience" ref={expeRef}>
+      <section
+        id="experience"
+        ref={expeRef}
+        style={{
+          paddingTop: "70px",
+          marginTop: "-70px",
+        }}
+      >
         <h2 className="text-3xl font-bold text-center p-4 flex justify-center items-center gap-3">
           <MdWork /> Experience
         </h2>
@@ -75,11 +82,11 @@ const Experience = () => {
                   </div>
 
                   <p
-                    className="mt-2 text-justify transition-all duration-500 overflow-hidden text-gray-700 dark:text-gray-500"
+                    className="mt-2 text-justify whitespace-pre-wrap transition-all duration-500  overflow-hidden text-gray-700 dark:text-gray-500"
                     style={
                       desc == experience.description
-                        ? { maxHeight: "400px" }
-                        : { maxHeight: "100px" }
+                        ? { minHeight: "100%" }
+                        : { maxHeight: "150px" }
                     }
                   >
                     {experience.description}
@@ -132,11 +139,11 @@ const Experience = () => {
                     <p>{experience.fromTo}</p>
                   </div>
                   <p
-                    className="mt-2 overflow-hidden transition-all duration-500 text-justify text-gray-700 dark:text-gray-500"
+                    className="mt-2 overflow-hidden transition-all whitespace-pre-wrap duration-500 text-justify text-gray-700 dark:text-gray-500"
                     style={
                       desc == experience.description
-                        ? { maxHeight: "400px" }
-                        : { maxHeight: "100px" }
+                        ? { maxHeight: "100%" }
+                        : { maxHeight: "150px" }
                     }
                   >
                     {experience.description}

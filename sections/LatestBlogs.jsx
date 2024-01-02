@@ -9,7 +9,13 @@ import AnimatedButton from "@/components/buttons/AnimatedButton";
 const LatestBlogs = () => {
   return (
     <Fragment>
-      <section id="blogs">
+      <section
+        id="blogs"
+        style={{
+          paddingTop: "70px",
+          marginTop: "-70px",
+        }}
+      >
         <div
           className={"py-8 pt-4 shadow-zinc-300 dark:shadow-zinc-700 shadow-sm"}
         >
