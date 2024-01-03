@@ -24,9 +24,10 @@ const QuizApp = () => {
     setAnswer();
     setLoading(true);
     axios
-      .get("https://opentdb.com/api.php?amount=1&type=multiple")
+      .get(`https://opentdb.com/api.php?amount=1&type=multiple`)
       .then((res) => {
         setLoading(false);
+        console.log(res);
         setQuestion(he.decode(res.data.results[0].question));
 
         setCategory(he.decode(res.data.results[0].category));

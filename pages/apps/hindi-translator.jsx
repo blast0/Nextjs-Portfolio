@@ -18,12 +18,11 @@ const HindiTranslator = () => {
         `/api/translate?text=${text}&language=${language}`
       );
       if (!data.success) {
-        alert(data.message);
+        console.log(data);
         setLoading(false);
         return;
       }
       setLoading(false);
-      console.log(data.translatedText);
       setOutput(data.translatedText);
     } catch (error) {
       console.error(error);
@@ -53,7 +52,7 @@ const HindiTranslator = () => {
                 onChange={(e) => setText(e.target.value)}
                 placeholder="Wirte here..."
                 value={text}
-               />
+              />
             </div>
 
             <div className="w-fit m-auto my-4">
@@ -86,7 +85,7 @@ const HindiTranslator = () => {
                 name=""
                 readOnly
                 value={loading ? "...Loading" : output}
-               />
+              />
             </div>
           </div>
         </div>
