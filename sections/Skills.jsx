@@ -60,7 +60,7 @@ const TechStack = () => {
           marginTop: "-70px",
         }}
       >
-        <h2 className="text-3xl font-bold text-center p-4 flex justify-center items-center gap-3">
+        <h2 className="text-3xl font-bold text-center p-4 flex justify-center items-center mb-5 gap-3">
           <FaLaptopCode /> Tech Stack
         </h2>
 

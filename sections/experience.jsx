@@ -41,7 +41,7 @@ const Experience = () => {
           marginTop: "-70px",
         }}
       >
-        <h2 className="text-3xl font-bold text-center p-4 flex justify-center items-center gap-3">
+        <h2 className="text-3xl font-bold text-center p-4 flex justify-center items-center mb-5 gap-3">
           <MdWork /> Experience
         </h2>
 
@@ -66,6 +66,11 @@ const Experience = () => {
                         : experience.description
                     )
                   }
+                  style={
+                    desc == experience.description
+                      ? { minHeight: "100%" }
+                      : { maxHeight: "200px" }
+                  }
                 >
                   <div className="flex justify-between gap-2">
                     <p className="text-xl md:text-2xl font-bold text-red-600">
@@ -81,14 +86,7 @@ const Experience = () => {
                     <p>{experience.fromTo}</p>
                   </div>
 
-                  <p
-                    className="mt-2 text-justify whitespace-pre-wrap transition-all duration-500  overflow-hidden text-gray-700 dark:text-gray-500"
-                    style={
-                      desc == experience.description
-                        ? { minHeight: "100%" }
-                        : { maxHeight: "150px" }
-                    }
-                  >
+                  <p className="mt-2 text-justify whitespace-pre-wrap transition-all duration-500  overflow-hidden text-gray-700 dark:text-gray-500">
                     {experience.description}
                   </p>
                   <button
@@ -124,6 +122,11 @@ const Experience = () => {
                         : experience.description
                     )
                   }
+                  style={
+                    desc == experience.description
+                      ? { maxHeight: "100%" }
+                      : { maxHeight: "200px" }
+                  }
                 >
                   <div className="flex justify-between gap-2">
                     <p className="text-xl md:text-2xl font-bold text-red-600">
@@ -138,14 +141,7 @@ const Experience = () => {
                     <p className="font-semibold">{experience.role}</p>
                     <p>{experience.fromTo}</p>
                   </div>
-                  <p
-                    className="mt-2 overflow-hidden transition-all whitespace-pre-wrap duration-500 text-justify text-gray-700 dark:text-gray-500"
-                    style={
-                      desc == experience.description
-                        ? { maxHeight: "100%" }
-                        : { maxHeight: "150px" }
-                    }
-                  >
+                  <p className="mt-2 overflow-hidden transition-all whitespace-pre-wrap duration-500 text-justify text-gray-700 dark:text-gray-500">
                     {experience.description}
                   </p>
                   <button
