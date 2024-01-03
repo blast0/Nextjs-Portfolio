@@ -69,7 +69,7 @@ const Intro = () => {
             <div className="mt-5 md:mt-10 flex gap-3">
               {/* Hire Me Button */}
               <Link
-                className="text-white text-xl font-semibold rounded bg-red-400 hover:bg-red-500 px-2 py-1"
+                className="text-white text-xl animate-pulse font-semibold rounded bg-red-400 hover:bg-red-500 px-2 py-1"
                 href={"#getInTouch"}
               >
                 Hire me
