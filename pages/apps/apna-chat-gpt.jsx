@@ -26,9 +26,13 @@ const ApnaChatGpt = () => {
       setAnswer("");
       const { data } = await axios.post(`/api/chatgpt?query=${question}`);
       if (!data.success) {
-        alert(data.message);
+        alert(data);
+        console.log(data);
         setLoading(false);
         return;
+      }
+      if (data) {
+        console.log(data);
       }
       setLoading(false);
       setAnswer(data.answer);

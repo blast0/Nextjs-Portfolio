@@ -27,6 +27,7 @@ const nextConfig = {
       "www.spsghy.co.in",
       "sfsguwahati.edu.in",
       "drive.google.com",
+      "chatgpt-api8.p.rapidapi.com",
       "http://res.cloudinary.com",
       "https://images.shiksha.com",
       "https://www.spsghy.co.in",
