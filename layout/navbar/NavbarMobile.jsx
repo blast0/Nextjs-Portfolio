@@ -3,6 +3,8 @@ import { DiTechcrunch } from "react-icons/di";
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import { TbBulbFilled } from "react-icons/tb";
 import { GiHamburgerMenu } from "react-icons/gi";
+import SunLottie from "@/sections/SunLottie";
+import RocketLottie from "@/sections/RocketLottie";
 
 const NavbarMobile = ({ setShowMenu, setThemeFun, theme, showMenu, top }) => {
   return (
@@ -29,7 +31,11 @@ const NavbarMobile = ({ setShowMenu, setThemeFun, theme, showMenu, top }) => {
           className="text-[#c72c6c] dark:text-[#07d0e5] text-2xl font-semibold hover:scale-110"
           onClick={setThemeFun}
         >
-          {theme === "dark" ? <TbBulbFilled /> : <BsFillLightningChargeFill />}
+          {theme === "dark" ? (
+            <SunLottie animationPath="/lottie/sunlight.json" />
+          ) : (
+            <RocketLottie animationPath="/lottie/moon2.json" />
+          )}
         </button>
       </div>
     </div>
