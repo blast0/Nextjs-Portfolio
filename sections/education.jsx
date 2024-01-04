@@ -55,7 +55,7 @@ const Education = () => {
         >
           {EducationData.map((education) => (
             <div
-              className="transition-all duration-700 flex border border-zinc-300 dark:border-zinc-700 shadow-md shadow-zinc-300 dark:shadow-zinc-700 rounded gap-6"
+              className="transition-all h-[130px] duration-700 flex border border-zinc-300 dark:border-zinc-700 shadow-md shadow-zinc-300 dark:shadow-zinc-700 rounded gap-6"
               key={education.name}
             >
               <Image
@@ -63,7 +63,7 @@ const Education = () => {
                 className="hidden md:block bg-blue-400 object-cover"
                 height={150}
                 src={education.image}
-                width={150}
+                width={220}
               />
               <div className="flex flex-col gap-2 p-3 md:p-1">
                 <p className="text-xl md:text-2xl font-bold text-red-600">

@@ -27,16 +27,16 @@ const Apps = () => {
           Apps
         </h3>
 
-        <div className="md:flex hidden md:grid-cols-8 grid-cols-5 justify-center mx-8 gap-5 content-center">
+        <div className="md:flex hidden justify-center mx-8 gap-5 content-center">
           {AppsData.map((app, key) => (
             <div className="overflow-hidden" key={key}>
               <Link href={`/${app.linkName}`}>
                 <Image
                   alt="app"
                   className="object-cover rounded md:rounded-[30px] w-full"
-                  height={500}
+                  height={573}
                   src={theme === "dark" ? app.imageUrl : app.imageLight}
-                  width={250}
+                  width={283}
                   key={key}
                 />
               </Link>
@@ -54,7 +54,7 @@ export default Apps;
 
 const MobileScreenApps = () => {
   return (
-    <div className="md:hidden gap-6 grid grid-cols-4 px-8 pb-10">
+    <div className="md:hidden gap-6 flex flex-wrap flex-cols-2 justify-center px-8 pb-10">
       {AppsData.map((app, key) => (
         <div key={key}>
           <Link href={`/${app.linkName}`}>
@@ -67,9 +67,6 @@ const MobileScreenApps = () => {
                 width={150}
                 key={key}
                 loader={() => app.iconUrl}
-                onLoad={() => {
-                  console.log("image loaded");
-                }}
               />
             </div>
           </Link>

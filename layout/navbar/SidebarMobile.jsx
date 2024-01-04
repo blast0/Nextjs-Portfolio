@@ -16,7 +16,7 @@ const MobileNavbar = ({ showMenu, setShowMenu }) => {
       >
         {/* Sidebar */}
         <div
-          className={`w-[70%] h-screen bg-white dark:bg-black shadow-sm shadow-gray-600 dark:shadow-gray-300 ${
+          className={`w-[200px] h-screen bg-white dark:bg-[rgba(15,16,53,0.9)] shadow-sm shadow-gray-600 dark:shadow-gray-300 ${
             showMenu ? null : " translate-x-[-450px] "
           } transition-all duration-500`}
         >
@@ -24,7 +24,7 @@ const MobileNavbar = ({ showMenu, setShowMenu }) => {
             {/* Name Logo */}
             <div className="flex items-center gap-2">
               <div className="text-white w-8 h-8 bg-[#c72c6c] dark:bg-[#07d0e5] rounded-full flex justify-center items-center">
-                S
+                B
               </div>
               <p className="text-gray-400 flex">
                 <span className="text-lg font-bold">BISHAL</span>{" "}

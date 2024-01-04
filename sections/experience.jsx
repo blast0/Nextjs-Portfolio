@@ -58,7 +58,7 @@ const Experience = () => {
                 key={experience.companyName}
               >
                 <div
-                  className="md:w-[45%] flex flex-col items-stretch cursor-pointer p-3 border border-zinc-300 dark:border-zinc-700 shadow-zinc-300 dark:shadow-zinc-700 shadow-sm rounded"
+                  className="md:w-[49%] flex flex-col items-stretch cursor-pointer p-3 border border-zinc-300 dark:border-zinc-700 shadow-zinc-300 dark:shadow-zinc-700 shadow-sm rounded"
                   onClick={() =>
                     setDesc(
                       desc === experience.description
@@ -86,7 +86,7 @@ const Experience = () => {
                     <p>{experience.fromTo}</p>
                   </div>
 
-                  <p className="mt-2 text-justify whitespace-pre-wrap transition-all duration-500  overflow-hidden text-gray-700 dark:text-gray-500">
+                  <p className="mt-2 text-sm md:text-lg text-justify whitespace-pre-wrap transition-all duration-500  overflow-hidden text-gray-700 dark:text-gray-500">
                     {experience.description}
                   </p>
                   <button
@@ -114,7 +114,7 @@ const Experience = () => {
                 key={experience.companyName}
               >
                 <div
-                  className="md:w-[45%] flex flex-col items-stretch  cursor-pointer  transition-all duration-500 p-3 border border-zinc-300 dark:border-zinc-700 shadow-zinc-300 dark:shadow-zinc-700 shadow-smrounded"
+                  className="md:w-[49%] flex flex-col text-sm md:text-lg items-stretch  cursor-pointer  transition-all duration-500 p-3 border border-zinc-300 dark:border-zinc-700 shadow-zinc-300 dark:shadow-zinc-700 shadow-smrounded"
                   onClick={() =>
                     setDesc(
                       desc === experience.description

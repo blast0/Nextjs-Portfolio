@@ -53,7 +53,7 @@ const About = () => {
         <h2 className="text-3xl font-bold text-center pt-4 pb-8 flex justify-center items-center gap-3">
           <FaUserCheck /> About me
         </h2>
-        <div className="pb-[30px] px-[20px] md:px-[100px] lg:px-[200px] md:flex gap-[50px]">
+        <div className="pb-[30px] px-[20px] md:px-[30px] lg:px-[40px] md:flex gap-[20px]">
           {/* Person Image */}
           <Image
             alt="about image"
