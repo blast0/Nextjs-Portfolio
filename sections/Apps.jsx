@@ -54,7 +54,7 @@ export default Apps;
 
 const MobileScreenApps = () => {
   return (
-    <div className="md:hidden gap-6 flex flex-wrap flex-cols-2 justify-center px-8 pb-10">
+    <div className="md:hidden gap-3 flex flex-wrap flex-cols-2 justify-center px-8 pb-10">
       {AppsData.map((app, key) => (
         <div key={key}>
           <Link href={`/${app.linkName}`}>
