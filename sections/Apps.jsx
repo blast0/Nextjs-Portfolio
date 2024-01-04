@@ -34,9 +34,9 @@ const Apps = () => {
                 <Image
                   alt="app"
                   className="object-cover rounded md:rounded-[30px] w-full"
-                  height={573}
+                  height={500}
                   src={theme === "dark" ? app.imageUrl : app.imageLight}
-                  width={283}
+                  width={250}
                   key={key}
                 />
               </Link>
