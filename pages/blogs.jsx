@@ -6,7 +6,8 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 import { BlogsData } from "@/constants";
 import Theme from "@/utils/Theme";
-import BackTo from "@/components/buttons/BackTo";
+// import BackTo from "@/components/buttons/BackTo";
+import Navbar from "@/layout/navbar/Navbar";
 
 const BlogsPage = () => {
   return (
@@ -16,8 +17,9 @@ const BlogsPage = () => {
       </Head>
 
       <Theme>
-        <BackTo backTo={""} />
-        <div className="p-[5%] pt-[2%] dark:bg-gray-700">
+        <Navbar />
+        {/* <BackTo backTo={""} /> */}
+        <div className="p-[5%] pt-[80px] dark:bg-gray-700">
           <p className="font-bold text-2xl p-2 dark:text-white">Blogs</p>
 
           <div className="pb-5">

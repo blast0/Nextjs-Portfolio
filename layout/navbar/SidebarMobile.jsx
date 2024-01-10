@@ -2,21 +2,66 @@ import React, { Fragment } from "react";
 import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
 import { DiTechcrunch } from "react-icons/di";
+import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 
 import { NavbarMenu } from "./NavbarItems";
+const themes = {
+  light: {
+    sidebar: {
+      backgroundColor: "#ffffff",
+      color: "#607489",
+    },
+    menu: {
+      menuContent: "#fbfcfd",
+      icon: "#0098e5",
+      hover: {
+        backgroundColor: "#c5e4ff",
+        color: "#44596e",
+      },
+      disabled: {
+        color: "#9fb6cf",
+      },
+    },
+  },
+  dark: {
+    sidebar: {
+      backgroundColor: "#0b2948",
+      color: "#8ba1b7",
+    },
+    menu: {
+      menuContent: "#082440",
+      icon: "#59d0ff",
+      hover: {
+        backgroundColor: "#00458b",
+        color: "#b6c8d9",
+      },
+      disabled: {
+        color: "#3e5e7e",
+      },
+    },
+  },
+};
 
-const MobileNavbar = ({ showMenu, setShowMenu }) => {
+const hexToRgba = (hex, alpha) => {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+};
+
+const MobileSidebar = ({ showMenu, setShowMenu, theme }) => {
   return (
     <Fragment>
       <div
         className={`w-full h-screen bg-[rgba(255,255,255,0.3)] dark:bg-[rgba(0,0,0,0.3)] fixed ${
           showMenu ? null : "hidden"
         } top-0 left-0 z-10 `}
-        onClick={() => setShowMenu(!showMenu)}
+        // onClick={() => setShowMenu(!showMenu)}
       >
         {/* Sidebar */}
         <div
-          className={`w-[200px] h-screen bg-white dark:bg-[rgba(15,16,53,0.9)] shadow-sm shadow-gray-600 dark:shadow-gray-300 ${
+          className={`w-[250px] h-screen bg-white dark:bg-[rgba(15,16,53,0.9)] shadow-sm shadow-gray-600 dark:shadow-gray-300 ${
             showMenu ? null : " translate-x-[-450px] "
           } transition-all duration-500`}
         >
@@ -40,23 +85,103 @@ const MobileNavbar = ({ showMenu, setShowMenu }) => {
               <IoMdClose />
             </button>
           </div>
-
-          <div className="p-2 flex flex-col gap-2">
-            {/* Navbar Links */}
-            {NavbarMenu.map((navbar) => (
-              <Link
-                className="text-lg p-2 bg-gray-200 hover:bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 rounded"
-                href={navbar.link}
-                key={navbar.name}
+          {showMenu ? (
+            <Sidebar
+              rootStyles={{
+                top: "55px",
+                background: "rgba(0,69,139,0.1)",
+                color: "",
+                zIndex: 2,
+                height: "100vh",
+                position: "fixed",
+              }}
+            >
+              <Menu
+                rootStyles={{ background: "rgba(0,69,139,0.3)" }}
+                menuItemStyles={{
+                  root: {
+                    fontSize: "13px",
+                    fontWeight: 400,
+                  },
+                  icon: {
+                    color: themes[theme].menu.icon,
+                  },
+                  SubMenuExpandIcon: {
+                    color: "#b6b7b9",
+                  },
+                  subMenuContent: ({ level }) => ({
+                    backgroundColor:
+                      level === 0
+                        ? hexToRgba(
+                            themes[theme].menu.menuContent,
+                            // hasImage
+                            false && !collapsed ? 0.4 : 1
+                          )
+                        : "transparent",
+                  }),
+                  button: {
+                    "&:hover": {
+                      backgroundColor: hexToRgba(
+                        themes[theme].menu.hover.backgroundColor,
+                        // hasImage
+                        false ? 0.8 : 1
+                      ),
+                      color: themes[theme].menu.hover.color,
+                    },
+                  },
+                  label: ({ open }) => ({
+                    fontWeight: open ? 600 : undefined,
+                  }),
+                }}
               >
-                {navbar.name}
-              </Link>
-            ))}
-          </div>
+                <MenuItem
+                  component={<Link href="/#home" />}
+                  rootStyles={
+                    {
+                      // color: "black",
+                    }
+                  }
+                >
+                  Home
+                </MenuItem>
+                <MenuItem component={<Link href="/#about" />}> About</MenuItem>
+                <MenuItem component={<Link href="/#techStack" />}>
+                  Tech Stack
+                </MenuItem>
+                <MenuItem component={<Link href="/#education" />}>
+                  Education
+                </MenuItem>
+                <MenuItem component={<Link href="/#experience" />}>
+                  Experience
+                </MenuItem>
+                <SubMenu
+                  rootStyles={{
+                    [`&.active`]: {
+                      backgroundColor: "red",
+                      color: "green",
+                    },
+                  }}
+                  title="Sub Component 1"
+                  prefix="Blogs"
+                >
+                  <MenuItem component={<Link href="/blogs" />}>
+                    All Blogs
+                  </MenuItem>
+                  <MenuItem component={<Link href="/blogs/others/why-next" />}>
+                    Why we should move to Next js
+                  </MenuItem>
+                  <MenuItem component={<Link href="css/css-transform" />}>
+                    CSS transform property
+                  </MenuItem>
+                </SubMenu>
+                <MenuItem component={<Link href="/#apps" />}>Apps</MenuItem>
+              </Menu>
+            </Sidebar>
+          ) : null}
         </div>
       </div>
     </Fragment>
   );
 };
 
-export default MobileNavbar;
+export default MobileSidebar;

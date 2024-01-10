@@ -5,9 +5,10 @@ import { DiTechcrunch } from "react-icons/di";
 import SunLottie from "@/sections/SunLottie";
 import RocketLottie from "@/sections/RocketLottie";
 
-import MobileNavbar from "./SidebarMobile";
+import MobileSidebar from "./SidebarMobile";
 import { NavbarMenu } from "./NavbarItems";
 import NavbarMobile from "./NavbarMobile";
+// import { Link } from 'react-router-dom';
 
 import { ThemeContext } from "@/context/themeContext";
 
@@ -77,7 +78,6 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-
       {/* Mobile Header */}
       <NavbarMobile
         setShowMenu={setShowMenu}
@@ -86,9 +86,12 @@ const Navbar = () => {
         theme={theme}
         top={top}
       />
-
       {/* SideMenu For Mobile Screen */}
-      <MobileNavbar setShowMenu={setShowMenu} showMenu={showMenu} />
+      <MobileSidebar
+        setShowMenu={setShowMenu}
+        showMenu={showMenu}
+        theme={theme}
+      />
     </Fragment>
   );
 };

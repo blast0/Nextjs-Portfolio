@@ -8,7 +8,7 @@ import {
   SiRedux,
   SiTailwindcss,
   SiMui,
-  SiChakraui,
+  // SiChakraui,
   SiFirebase,
   SiTypescript,
   SiJquery,
@@ -30,8 +30,12 @@ export const TechStackData = [
   {
     Advance: [
       {
-        name: "ReactJS",
-        icon: <DiReact className="md:text-4xl text-2xl" color="#53c1de" />,
+        name: "HTML5",
+        icon: <AiFillHtml5 className="md:text-4xl text-2xl" color="#fa6700" />,
+      },
+      {
+        name: "CSS",
+        icon: <FaCss3Alt className="md:text-4xl text-2xl" color={"#039be5"} />,
       },
       {
         name: "JavaScript",
@@ -40,20 +44,12 @@ export const TechStackData = [
         ),
       },
       {
+        name: "ReactJS",
+        icon: <DiReact className="md:text-4xl text-2xl" color="#53c1de" />,
+      },
+      {
         name: "Redux-toolkit",
         icon: <SiRedux className="md:text-4xl text-2xl" color="#7e57c2" />,
-      },
-      {
-        name: "HTML5",
-        icon: <AiFillHtml5 className="md:text-4xl text-2xl" color="#fa6700" />,
-      },
-      {
-        name: "CSS3",
-        icon: <FaCss3Alt className="md:text-4xl text-2xl" color={"#039be5"} />,
-      },
-      {
-        name: "Bootstrap",
-        icon: <FaBootstrap className="md:text-4xl text-2xl" color="#673ab7" />,
       },
       {
         name: "Tailwind CSS",
@@ -61,10 +57,10 @@ export const TechStackData = [
           <SiTailwindcss className="md:text-4xl text-2xl" color="#4caf50" />
         ),
       },
-      {
-        name: "Meterial UI",
-        icon: <SiMui className="md:text-4xl text-2xl" color="#29b6f6" />,
-      },
+      // {
+      //   name: "Meterial UI",
+      //   icon: <SiMui className="md:text-4xl text-2xl" color="#29b6f6" />,
+      // },
       // {
       //   name: "Chakra UI",
       //   icon: <SiChakraui className="md:text-4xl text-2xsl" color="#50cbc0" />
@@ -79,8 +75,6 @@ export const TechStackData = [
         name: "Github",
         icon: <BsGithub className="md:text-4xl text-2xl" color="#c9d1d9" />,
       },
-    ],
-    Good: [
       {
         name: "NextJS",
         icon: (
@@ -91,6 +85,12 @@ export const TechStackData = [
         name: "NodeJS",
         icon: <SiNodedotjs className="md:text-4xl text-2xl" color="#4caf50" />,
       },
+    ],
+    Good: [
+      {
+        name: "Bootstrap",
+        icon: <FaBootstrap className="md:text-4xl text-2xl" color="#673ab7" />,
+      },
       {
         name: "Express",
         icon: <SiExpress className="md:text-4xl text-2xl" color="#555555" />,
@@ -99,10 +99,10 @@ export const TechStackData = [
         name: "MongoDB",
         icon: <DiMongodb className="md:text-4xl text-2xl" color="#4caf50" />,
       },
-      {
-        name: "firebase",
-        icon: <SiFirebase className="md:text-4xl text-2xl" color="#ffcd33" />,
-      },
+      // {
+      //   name: "firebase",
+      //   icon: <SiFirebase className="md:text-4xl text-2xl" color="#ffcd33" />,
+      // },
       {
         name: "jQuery",
         icon: <SiJquery className="md:text-4xl text-2xsl" color="#106dae" />,
@@ -134,14 +134,14 @@ export const TechStackData = [
           />
         ),
       },
-      {
-        name: "PHP",
-        icon: <FaPhp className="md:text-4xl text-2xl" color="#7b7fb5" />,
-      },
-      {
-        name: "JAVA",
-        icon: <FaJava className="md:text-4xl text-2xl" color="#547c99" />,
-      },
+      // {
+      //   name: "PHP",
+      //   icon: <FaPhp className="md:text-4xl text-2xl" color="#7b7fb5" />,
+      // },
+      // {
+      //   name: "JAVA",
+      //   icon: <FaJava className="md:text-4xl text-2xl" color="#547c99" />,
+      // },
       {
         name: "SASS",
         icon: <DiSass className="md:text-4xl text-2xl" color="#f06292" />,
@@ -150,10 +150,10 @@ export const TechStackData = [
         name: "MySQL",
         icon: <GrMysql className="md:text-4xl text-2xl" color="#08668e" />,
       },
-      {
-        name: "Shopify",
-        icon: <FaShopify className="md:text-4xl text-2xl" color="#99c14f" />,
-      },
+      // {
+      //   name: "Shopify",
+      //   icon: <FaShopify className="md:text-4xl text-2xl" color="#99c14f" />,
+      // },
     ],
   },
 ];

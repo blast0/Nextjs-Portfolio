@@ -21,6 +21,7 @@
     "react-dom": "^18.2.0",
     "react-ga4": "^2.1.0",
     "react-icons": "^4.9.0",
+    "react-pro-sidebar": "^1.1.0-alpha.1",
     "react-responsive-carousel": "^3.2.23",
     "react-responsive-masonry": "^2.1.7",
     "react-syntax-highlighter": "^15.5.0",
