@@ -55,11 +55,11 @@ const Intro = () => {
             className="translate-x-[-500px] transition-all duration-700 opacity-0 flex flex-col items-center"
             ref={introRef}
           >
-            <p className="py-2 text-2xl md:text-4xl font-semibold font-sans">
+            <p className="py-2 px-4 text-2xl md:text-3xl font-semibold font-sans">
               Hi There !
             </p>
             {/* Profile Name */}
-            <p className="text-2xl md:text-4xl py-2 font-semibold font-sans">
+            <p className="text-2xl md:text-3xl py-2 font-semibold font-sans">
               I&apos;m a full stack
               <span className="text-[#c72c6c] dark:text-[#07d0e5]">
                 {" "}

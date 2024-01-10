@@ -38,17 +38,18 @@ const LatestBlogs = () => {
                         height={250}
                         src={blog.imageUrl}
                         width={320}
-                        style={{ height: "70%" }}
+                        style={{ height: "75%" }}
                       />
                       <div
                         className="px-1 py-2 border-t border-solid border-gray-600 dark:border-white"
                         style={{
                           display: "flex",
-                          height: "30%",
+                          height: "25%",
+                          justifyContent: "space-between",
                         }}
                       >
-                        <div className="blogLink">{blog.name}</div>
-                        <p className="dark:text-white text-xs py-1 text-gray-600 text-center">
+                        <div className="blogLink text-lg">{blog.name}</div>
+                        <p className="dark:text-white text-sm py-1 mr-5 text-gray-600 text-center">
                           {blog.date}
                         </p>
                       </div>

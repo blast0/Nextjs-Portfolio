@@ -40,7 +40,7 @@ const BlogsPage = () => {
                           height={250}
                           src={blog.imageUrl}
                           style={{ width: "100%" }}
-                          width={400}
+                          width={300}
                         />
                         <div className="px-1 py-2  border-t border-solid border-gray-600 dark:border-white">
                           <div className="blogLink">{blog.name}</div>
