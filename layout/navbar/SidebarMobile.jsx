@@ -4,7 +4,8 @@ import { IoMdClose } from "react-icons/io";
 import { DiTechcrunch } from "react-icons/di";
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 
-import { NavbarMenu } from "./NavbarItems";
+// import { NavbarMenu } from "./NavbarItems";
+import { BlogsData } from "@/constants";
 const themes = {
   light: {
     sidebar: {
@@ -94,6 +95,7 @@ const MobileSidebar = ({ showMenu, setShowMenu, theme }) => {
                 zIndex: 2,
                 height: "100vh",
                 position: "fixed",
+                paddingBottom: "50px",
               }}
             >
               <Menu
@@ -134,16 +136,7 @@ const MobileSidebar = ({ showMenu, setShowMenu, theme }) => {
                   }),
                 }}
               >
-                <MenuItem
-                  component={<Link href="/#home" />}
-                  rootStyles={
-                    {
-                      // color: "black",
-                    }
-                  }
-                >
-                  Home
-                </MenuItem>
+                <MenuItem component={<Link href="/#home" />}>Home</MenuItem>
                 <MenuItem component={<Link href="/#about" />}> About</MenuItem>
                 <MenuItem component={<Link href="/#techStack" />}>
                   Tech Stack
@@ -167,12 +160,13 @@ const MobileSidebar = ({ showMenu, setShowMenu, theme }) => {
                   <MenuItem component={<Link href="/blogs" />}>
                     All Blogs
                   </MenuItem>
-                  <MenuItem component={<Link href="/blogs/others/why-next" />}>
-                    Why we should move to Next js
-                  </MenuItem>
-                  <MenuItem component={<Link href="css/css-transform" />}>
-                    CSS transform property
-                  </MenuItem>
+                  {BlogsData.map((BlogData) => (
+                    <MenuItem
+                      component={<Link href={"/blogs/" + BlogData.linkName} />}
+                    >
+                      {BlogData.name}
+                    </MenuItem>
+                  ))}
                 </SubMenu>
                 <MenuItem component={<Link href="/#apps" />}>Apps</MenuItem>
               </Menu>
