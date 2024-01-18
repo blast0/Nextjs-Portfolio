@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <Fragment>
       {/* Desktop Header */}
-      <div className="w-full h-[70px] lg:px-8 md:px-4 bg-[rgba(255,255,255,0.8)] dark:bg-[rgba(0,0,0,0.8)] static backdrop-filter backdrop-blur-lg hidden md:flex justify-between items-center gap-4 shadow-sm shadow-gray-300 dark:shadow-gray-800 fixed z-10 transition-all duration-100">
+      <div className="w-full h-[60px] lg:px-8 md:px-4 bg-[rgba(255,255,255,0.8)] dark:bg-[rgba(0,0,0,0.8)] static backdrop-filter backdrop-blur-lg hidden md:flex justify-between items-center gap-4 shadow-sm shadow-gray-300 dark:shadow-gray-800 fixed z-10 transition-all duration-100">
         {/* Name Logo */}
         <p className="text-gray-400 flex">
           <span className="text-lg font-bold">BISHAL</span>

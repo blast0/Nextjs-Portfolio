@@ -97,9 +97,9 @@ const MobileSidebar = ({ showMenu, setShowMenu, theme }) => {
                 position: "fixed",
                 paddingBottom: "50px",
               }}
+              backgroundColor="transparent"
             >
               <Menu
-                rootStyles={{ background: "rgba(0,69,139,0.3)" }}
                 menuItemStyles={{
                   root: {
                     fontSize: "13px",

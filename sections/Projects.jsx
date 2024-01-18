@@ -36,14 +36,7 @@ const Project = () => {
 
   return (
     <Fragment>
-      <section
-        id="project"
-        ref={projectRef}
-        style={{
-          paddingTop: "70px",
-          marginTop: "-70px",
-        }}
-      >
+      <section id="project" ref={projectRef} className="pt-[60px] mt-[-60px]">
         <h2 className="text-3xl font-bold text-center pt-4 pb-8 flex justify-center items-center gap-3">
           <CgWebsite /> Projects
         </h2>

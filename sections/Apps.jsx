@@ -11,14 +11,8 @@ const Apps = () => {
 
   return (
     <Fragment>
-      <div className="py-8 pt-4 shadow-zinc-300 dark:shadow-zinc-700 shadow-sm">
-        <section
-          id="apps"
-          style={{
-            paddingTop: "70px",
-            marginTop: "-70px",
-          }}
-        />
+      <div className="py-8 pt-4 pt-[60px] mt-[-60px] shadow-zinc-300 dark:shadow-zinc-700 shadow-sm">
+        <section id="apps" />
         <h3 className="text-3xl font-bold text-center pb-8 flex justify-center items-center gap-3">
           <span className="mr-3">
             {" "}
