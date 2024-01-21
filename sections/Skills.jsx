@@ -5,7 +5,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import { TechStackData } from "@/constants/SkillsData";
 
 const TechStack = () => {
-  const [section, setSection] = useState("Advance");
+  const [section, setSection] = useState("FrontEnd");
   const [sectionData, setSectionData] = useState([]);
   const [istechStack, setIsTechStack] = useState(false);
   const techStackRef = useRef();
@@ -66,7 +66,7 @@ const TechStack = () => {
         >
           <button
             className={`w-[100px] md:w-[150px] p-2 font-bold ${
-              section === "Advance" ? "bg-red-600" : null
+              section === "FrontEnd" ? "bg-red-600" : null
             } transition-all`}
             onClick={(e) => {
               setSection(e.target.innerText);
@@ -74,11 +74,11 @@ const TechStack = () => {
                 techBoxesRef.current.classList.remove("pop-up-child");
             }}
           >
-            Advance
+            FrontEnd
           </button>
           <button
             className={`w-[100px] md:w-[150px] p-2 font-bold ${
-              section === "Good" ? "bg-red-600" : null
+              section === "BackEnd" ? "bg-red-600" : null
             } transition-all border-l border-r border-black dark:border-white border-solid`}
             onClick={(e) => {
               setSection(e.target.innerText);
@@ -86,11 +86,11 @@ const TechStack = () => {
                 techBoxesRef.current.classList.remove("pop-up-child");
             }}
           >
-            Good
+            BackEnd
           </button>
           <button
             className={`w-[100px] md:w-[150px] p-2 font-bold ${
-              section === "Familiar" ? "bg-red-600" : null
+              section === "Other" ? "bg-red-600" : null
             } transition-all`}
             onClick={(e) => {
               setSection(e.target.innerText);
@@ -98,7 +98,7 @@ const TechStack = () => {
                 techBoxesRef.current.classList.remove("pop-up-child");
             }}
           >
-            Familiar
+            Other
           </button>
         </div>
 
@@ -108,7 +108,7 @@ const TechStack = () => {
         >
           {sectionData.map((tech) => (
             <div
-              className="transition-all hover:animate-bounce cursor-pointer duration-700 px-2 h-fit py-3 md:py-5 w-[120px] md:w-[150px] border border-black dark:border-white border-solid rounded flex flex-col gap-3 items-center"
+              className="transition-all hover:border-emerald-500 hover:-translate-y-6 cursor-pointer duration-700 px-2 h-fit py-3 md:py-5 w-[120px] md:w-[150px] border border-black dark:border-white border-solid rounded flex flex-col gap-3 items-center"
               key={tech.name}
             >
               <p>{tech.icon}</p>

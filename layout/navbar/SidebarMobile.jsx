@@ -13,10 +13,10 @@ const themes = {
       color: "#607489",
     },
     menu: {
-      menuContent: "#fbfcfd",
+      menuContent: "#ff42906b",
       icon: "#0098e5",
       hover: {
-        backgroundColor: "#c5e4ff",
+        backgroundColor: "#ff429063",
         color: "#44596e",
       },
       disabled: {
@@ -52,6 +52,7 @@ const hexToRgba = (hex, alpha) => {
 };
 
 const MobileSidebar = ({ showMenu, setShowMenu, theme }) => {
+  console.log(theme);
   return (
     <Fragment>
       <div
@@ -90,7 +91,6 @@ const MobileSidebar = ({ showMenu, setShowMenu, theme }) => {
             <Sidebar
               rootStyles={{
                 top: "55px",
-                background: "rgba(0,69,139,0.1)",
                 color: "",
                 zIndex: 2,
                 height: "100vh",
