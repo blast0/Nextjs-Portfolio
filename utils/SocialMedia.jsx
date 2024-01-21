@@ -10,7 +10,12 @@ const SocialMedia = () => {
 
   return (
     <Fragment>
-      <div className="absolute left-5 bottom-20 fixed flex flex-col gap-4 z-1 top-[320px]">
+      <div
+        className="absolute left-5 bottom-20  flex flex-col gap-4 z-1 top-[320px]"
+        style={{
+          position: "fixed",
+        }}
+      >
         {SocialMediaData.map((social, key) => (
           <Link className="w-fit" href={social.link} key={key}>
             <div

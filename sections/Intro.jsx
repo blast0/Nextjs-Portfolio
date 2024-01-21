@@ -43,12 +43,12 @@ const Intro = () => {
 
   return (
     <Fragment>
-      {/* <Head>
+      <Head>
         <title>Bishal&apos;s Portfolio</title>
-      </Head> */}
+      </Head>
       <section id="home">
         <div
-          className="min-h-[100vh] overflow-x-hidden px-[20px] md:px-[20px] lg:px-[20px] pt-[80px] md:pt-0 md:flex items-center justify-around shadow-zinc-300 dark:shadow-zinc-700 shadow-sm"
+          className="min-h-[100vh] flex align-center justify-center flex-wrap overflow-x-hidden px-[20px] md:px-[20px] lg:px-[20px] pt-[60px] md:pt-0 md:flex items-center justify-around shadow-zinc-300 dark:shadow-zinc-700 shadow-sm"
           ref={homeRef}
         >
           <div
@@ -83,14 +83,9 @@ const Intro = () => {
                 Download CV
               </Link>
             </div>
-            <div
-              style={{
-                width: "100%",
-                maxWidth: "400px",
-              }}
-            >
-              <GreetingLottie animationPath="/lottie/coding.json" />
-            </div>
+          </div>
+          <div className="w-full max-w-[500px]">
+            <GreetingLottie animationPath="/lottie/coding.json" />
           </div>
           {/* Image */}
           <div
