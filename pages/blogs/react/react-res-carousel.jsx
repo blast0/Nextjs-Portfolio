@@ -9,11 +9,11 @@ import BackTo from "@/components/buttons/BackTo";
 import Navbar from "@/layout/navbar/Navbar";
 
 const ReactResposiveCarousel = () => {
-  const [arrows, setArrows] = useState(false);
-  const [indicator, setIndicator] = useState(false);
-  const [status, setStatus] = useState(false);
-  const [keyBoard, setKeyBoard] = useState(false);
-  const [thumbs, setThumbs] = useState(false);
+  const [arrows, setArrows] = useState(true);
+  const [indicator, setIndicator] = useState(true);
+  const [status, setStatus] = useState(true);
+  const [keyBoard, setKeyBoard] = useState(true);
+  const [thumbs, setThumbs] = useState(true);
 
   return (
     <Fragment>
@@ -122,8 +122,6 @@ const ReactResposiveCarousel = () => {
               </Carousel>
             </div>
           </div>
-
-          <div className="layoutBox2">Lorem</div>
         </div>
       </Theme>
     </Fragment>

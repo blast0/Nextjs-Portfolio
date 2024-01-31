@@ -129,14 +129,6 @@ const CssSelector = () => {
               </div>
             </div>
           </div>
-
-          <div className="layoutBox2">
-            <p>
-              On August 6, 1991, without fanfare, British computer scientist Tim
-              Berners-Lee published the first-ever website while working at
-              CERN, the huge particle physics lab in Switzerland
-            </p>
-          </div>
         </div>
       </Theme>
     </Fragment>

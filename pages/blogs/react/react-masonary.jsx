@@ -5,6 +5,7 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 import Theme from "@/utils/Theme";
 import BackTo from "@/components/buttons/BackTo";
+import Navbar from "@/layout/navbar/Navbar";
 
 const ReactMasonary = () => {
   const [photos, setPhotos] = useState([]);
@@ -43,8 +44,8 @@ const ReactMasonary = () => {
         <title>React Masonary</title>
       </Head>
       <Theme>
+        <Navbar />
         <BackTo backTo={"blogs"} />
-
         <div className="dark:bg-black min-h-[92]">
           <div className="dowBtn" />
           <ResponsiveMasonry
