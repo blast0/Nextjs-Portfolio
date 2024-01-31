@@ -6,6 +6,7 @@ import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import Theme from "@/utils/Theme";
 import BackTo from "@/components/buttons/BackTo";
 import { ThemeContext } from "@/context/themeContext";
+import Navbar from "@/layout/navbar/Navbar";
 
 const SpreadOperator = () => {
   const { theme } = useContext(ThemeContext);
@@ -15,12 +16,11 @@ const SpreadOperator = () => {
       <Head>
         <title>Rest and Spread Operator</title>
       </Head>
-
       <Theme>
+        <Navbar />
         <BackTo backTo={"blogs"} />
-
-        <div className="layoutContainer">
-          <div className="layoutBox1">
+        <div className="layoutContainer top-[84px] fixed">
+          <div className="layoutBox1 overflow-y-scroll">
             <h2 className="blog-heading">
               Rest And Spread Operator in JavaScript
             </h2>
@@ -54,8 +54,6 @@ const SpreadOperator = () => {
             <Example8 myDark={theme === "dark"} />
             <Example9 myDark={theme === "dark"} />
           </div>
-
-          <div className="layoutBox2">Namaskaram</div>
         </div>
       </Theme>
     </Fragment>

@@ -6,6 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 
 import Theme from "@/utils/Theme";
 import BackTo from "@/components/buttons/BackTo";
+import Navbar from "@/layout/navbar/Navbar";
 
 const ReactResposiveCarousel = () => {
   const [arrows, setArrows] = useState(false);
@@ -19,12 +20,11 @@ const ReactResposiveCarousel = () => {
       <Head>
         <title>React Responsive Carousel</title>
       </Head>
-
       <Theme>
+        <Navbar />
         <BackTo backTo={"blogs"} />
-
-        <div className="layoutContainer">
-          <div className="layoutBox1">
+        <div className="layoutContainer top-[84px] fixed">
+          <div className="layoutBox1 overflow-y-scroll">
             <h1 className="blog-heading">React Responsive Carousel</h1>
             <div className="md:w-[80%] w-[90%] m-auto flex flex-wrap gap-5 mb-5 mt-5">
               <div>

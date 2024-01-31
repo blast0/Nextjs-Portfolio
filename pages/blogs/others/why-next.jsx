@@ -6,6 +6,7 @@ import { RiCloseLine } from "react-icons/ri";
 
 import Theme from "@/utils/Theme";
 import BackTo from "@/components/buttons/BackTo";
+import Navbar from "@/layout/navbar/Navbar";
 
 const FirstPost = () => {
   const [close, setClose] = useState(false);
@@ -16,10 +17,10 @@ const FirstPost = () => {
         <title>Why Next js</title>
       </Head>
       <Theme>
+        <Navbar />
         <BackTo backTo={"blogs"} />
-
-        <div className="layoutContainer h-full">
-          <div className="layoutBox1">
+        <div className="layoutContainer top-[84px] fixed">
+          <div className="layoutBox1 overflow-y-scroll">
             <h1 className="blog-heading">Why you should move in to Next js</h1>
             <p className="text-sm text-gray-600 my-2">Aprile 17, 2023</p>
             <div className="mt-5">
@@ -30,23 +31,25 @@ const FirstPost = () => {
               </p>
               <ol>
                 <li>
-                  <Link href="#">
-                    1. Built-in Routing Support (Super easy to code)
-                  </Link>
+                  {/* <Link href="#"> */}
+                  1. Built-in Routing Support (Super easy to code)
+                  {/* </Link> */}
                 </li>
                 <li>
-                  <Link href="#">
-                    2. 700 Times Faster speed in production (Fast)
-                  </Link>
+                  {/* <Link href="#"> */}
+                  2. 700 Times Faster speed in production (Fast)
+                  {/* </Link> */}
                 </li>
                 <li>
-                  <Link href="#">
-                    3. Ability to write both Backend and Frontend code (API
-                    support)
-                  </Link>
+                  {/* <Link href="#"> */}
+                  3. Ability to write both Backend and Frontend code (API
+                  support)
+                  {/* </Link> */}
                 </li>
                 <li>
-                  <Link href="#">4. Search Engine Optimization (SEO)</Link>
+                  {/* <Link href="#"> */}
+                  4. Search Engine Optimization (SEO)
+                  {/* </Link> */}
                 </li>
               </ol>
               <p className="bg-gray-200 my-4 p-2 rounded dark:bg-black">
@@ -73,32 +76,6 @@ const FirstPost = () => {
               <Seo />
 
               <div className="text-center m-5 text-2xl">❤️ Thank You 🙏</div>
-            </div>
-          </div>
-
-          <div className="layoutBox2">
-            <div className={close ? "hidden" : ""}>
-              <Link
-                href={
-                  "https://https://bishalkumar-sde.netlify.app/blogs/react/fragment"
-                }
-              >
-                <div
-                  className={"border border-solid border-black h-[150px]"}
-                  style={{
-                    backgroundImage:
-                      "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77S6c9Tlz-zqWRRPgKeJDd8kSjbR_alp30g&usqp=CAU')",
-                  }}
-                >
-                  <div
-                    className="text-[0.8rem] w-fit bg-white ml-auto z-10"
-                    onClick={() => setClose(true)}
-                  >
-                    <RiCloseLine color="blue" />
-                  </div>
-                </div>
-              </Link>
-              <p className="text-[0.6rem] text-right">Report this ad</p>
             </div>
           </div>
         </div>

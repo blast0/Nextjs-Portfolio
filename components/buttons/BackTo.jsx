@@ -5,7 +5,7 @@ import { HiArrowNarrowLeft } from "react-icons/hi";
 const BackTo = ({ backTo }) => {
   return (
     <Fragment>
-      <div className="h-[12vh] sticky top-0 flex items-center px-10 dark:bg-black bg-white">
+      <div className="top-[60px] w-full absolute flex items-center px-10 dark:bg-[rgba(0,0,0,0.8)] bg-white">
         <Link href={`/${backTo}`}>
           <div className="flex items-center gap-3">
             <span className="text-xl font-lg">

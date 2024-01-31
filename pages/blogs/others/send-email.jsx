@@ -7,6 +7,7 @@ import { dark, github } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import Theme from "@/utils/Theme";
 import BackTo from "@/components/buttons/BackTo";
 import { ThemeContext } from "@/context/themeContext";
+import Navbar from "@/layout/navbar/Navbar";
 
 const SendEmail = () => {
   const { theme } = useContext(ThemeContext);
@@ -16,12 +17,12 @@ const SendEmail = () => {
       <Head>
         <title>send-email</title>
       </Head>
-
       <Theme>
+        <Navbar />
         <BackTo backTo={"blogs"} />
 
-        <div className="layoutContainer">
-          <div className="layoutBox1">
+        <div className="layoutContainer top-[84px] fixed">
+          <div className="layoutBox1 overflow-y-scroll">
             <h1 className="blog-heading">
               How to send a email with attachment using node js
             </h1>
@@ -112,8 +113,6 @@ const SendEmail = () => {
 
             <div className="text-center m-5 text-2xl">❤️ Thank You 🙏</div>
           </div>
-
-          <div className="layoutBox2">Hello</div>
         </div>
       </Theme>
     </Fragment>

@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import Theme from "@/utils/Theme";
 import BackTo from "@/components/buttons/BackTo";
+import Navbar from "@/layout/navbar/Navbar";
 
 const LinearGradient = () => {
   const [dire1, setDire1] = useState("right");
@@ -22,15 +23,12 @@ const LinearGradient = () => {
       <Head>
         <title>linear-gradient</title>
       </Head>
-
       <Theme>
+        <Navbar />
         <BackTo backTo={"blogs"} />
-
-        <div className="layoutContainer">
-          <div className="layoutBox1">
-            <h1 className="blog-heading">
-              linear-gradient
-            </h1>
+        <div className="layoutContainer top-[84px] fixed">
+          <div className="layoutBox1 overflow-y-scroll">
+            <h1 className="blog-heading">linear-gradient</h1>
 
             <div className="text-2xl pb-2 mt-6 mb-3">
               background:{" "}
@@ -72,7 +70,7 @@ const LinearGradient = () => {
               style={{
                 background: `linear-gradient(to ${dire1}, ${color1}, ${color2})`,
               }}
-             />
+            />
 
             <p className="text-2xl pb-2 mt-6 mb-3">
               background:{" "}
@@ -120,7 +118,7 @@ const LinearGradient = () => {
               style={{
                 background: `linear-gradient(to ${dire2} ${dire3}, ${color3}, ${color4})`,
               }}
-             />
+            />
 
             <p className="text-2xl pb-2 mt-6 mb-3">
               background:{" "}
@@ -167,10 +165,8 @@ const LinearGradient = () => {
               style={{
                 background: `linear-gradient(to ${dire4}, ${color5}, ${color6}, ${color7})`,
               }}
-             />
+            />
           </div>
-
-          <div className="layoutBox2">Hello</div>
         </div>
       </Theme>
     </Fragment>

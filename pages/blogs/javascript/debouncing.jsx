@@ -6,6 +6,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import Theme from "@/utils/Theme";
 import BackTo from "@/components/buttons/BackTo";
 import { ThemeContext } from "@/context/themeContext";
+import Navbar from "@/layout/navbar/Navbar";
 
 const Debouncing = () => {
   const { theme } = useContext(ThemeContext);
@@ -15,16 +16,15 @@ const Debouncing = () => {
       <Head>
         <title>Debouncing in JavaScript</title>
       </Head>
-
       <Theme>
+        <Navbar />
         <BackTo backTo={"blogs"} />
+        <div className="layoutContainer top-[84px] fixed">
+          <div className="layoutBox1 overflow-y-scroll">
+            <h2 className="blog-heading">Debouncing in JavaScript</h2>
 
-        <div className='layoutContainer'>
-          <div className='layoutBox1'>
-            <h2 className='blog-heading'>Debouncing in JavaScript</h2>
-
-            <p className='text-lg font-bold mt-5'>DEFINATION</p>
-            <p className='font-bold my-2'>By Javascript</p>
+            <p className="text-lg font-bold mt-5">DEFINATION</p>
+            <p className="font-bold my-2">By Javascript</p>
             <p>
               The concept of debouncing is pretty straightforward. It delays the
               function invocation by a defined period of time to avoid
@@ -32,7 +32,7 @@ const Debouncing = () => {
               no event is triggered within that time, If the user triggers a new
               event during that time the time will be reset.
             </p>
-            <p className='font-bold my-2'>By Me</p>
+            <p className="font-bold my-2">By Me</p>
             <p>
               Dekho har bar event par function call karne ki bajaye ek time set
               kr diya jaata hai jisase pata chale ki user abb output chahata hai
@@ -43,8 +43,6 @@ const Debouncing = () => {
 
             <Example1 myDark={theme === "dark"} />
           </div>
-
-          <div className='layoutBox2'>Namaste</div>
         </div>
       </Theme>
     </Fragment>
@@ -96,21 +94,21 @@ const Example1 = ({ myDark }) => {
 
   return (
     <>
-      <h3 className='text-lg font-bold mt-6 mb-4'>Example 1</h3>
-      <p className='mb-2'>
+      <h3 className="text-lg font-bold mt-6 mb-4">Example 1</h3>
+      <p className="mb-2">
         In This example when you stop writing for 2 second alert will be showing
         = &quot;Function run after 2 seconds&quot;
       </p>
       <input
-        className='dark:bg-black my-3 py-1 px-2 rounded border border-solid border-black dark:border-white'
-        id=''
-        name=''
+        className="dark:bg-black my-3 py-1 px-2 rounded border border-solid border-black dark:border-white"
+        id=""
+        name=""
         onChange={innerFun}
-        placeholder='Write anything'
-        type='text'
+        placeholder="Write anything"
+        type="text"
       />
       <SyntaxHighlighter
-        language='javascript'
+        language="javascript"
         showLineNumbers={true}
         style={myDark ? dark : github}
       >

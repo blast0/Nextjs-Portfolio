@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import Theme from "@/utils/Theme";
 import BackTo from "@/components/buttons/BackTo";
+import Navbar from "@/layout/navbar/Navbar";
 
 const BlendMode = () => {
   const [blendMode, setBlendMode] = useState("normal");
@@ -12,12 +13,11 @@ const BlendMode = () => {
       <Head>
         <title>Background Blend Mode</title>
       </Head>
-
       <Theme>
+        <Navbar />
         <BackTo backTo={"blogs"} />
-
-        <div className="layoutContainer">
-          <div className="layoutBox1">
+        <div className="layoutContainer top-[84px] fixed">
+          <div className="layoutBox1 overflow-y-scroll">
             <h2 className="blog-heading">Background Blend Mode</h2>
 
             <p className="bg-gray-200 my-4 p-2 rounded dark:bg-black">
@@ -61,15 +61,6 @@ const BlendMode = () => {
                 backgroundImage: "url(/images/circle.png), url(/images/x.png)",
               }}
             />
-          </div>
-
-          <div className="layoutBox2">
-            <p>
-              CSS was first proposed by Håkon Wium Lie in 1994 and has since
-              become a fundamental technology for designing and styling web
-              pages.
-            </p>
-            F
           </div>
         </div>
       </Theme>

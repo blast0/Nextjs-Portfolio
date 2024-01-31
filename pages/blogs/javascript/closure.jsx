@@ -6,6 +6,7 @@ import { github, dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import Theme from "@/utils/Theme";
 import BackTo from "@/components/buttons/BackTo";
 import { ThemeContext } from "@/context/themeContext";
+import Navbar from "@/layout/navbar/Navbar";
 
 const Closure = () => {
   const { theme } = useContext(ThemeContext);
@@ -15,12 +16,11 @@ const Closure = () => {
       <Head>
         <title>Closure in Javascript</title>
       </Head>
-
       <Theme>
+        <Navbar />
         <BackTo backTo={"blogs"} />
-
-        <div className="layoutContainer">
-          <div className="layoutBox1">
+        <div className="layoutContainer top-[84px] fixed">
+          <div className="layoutBox1 overflow-y-scroll">
             <h2 className="blog-heading">Closure in JavaScript</h2>
 
             <h3 className="text-lg font-bold my-4">Defination :-</h3>
@@ -55,8 +55,6 @@ const Closure = () => {
             <Example4 myDark={theme === "dark"} />
             <Example5 myDark={theme === "dark"} />
           </div>
-
-          <div className="layoutBox2">Hello</div>
         </div>
       </Theme>
     </Fragment>

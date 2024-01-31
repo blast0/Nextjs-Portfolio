@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import Theme from "@/utils/Theme";
 import BackTo from "@/components/buttons/BackTo";
+import Navbar from "@/layout/navbar/Navbar";
 
 const CssTransform = () => {
   const [value1, setValue1] = useState(0);
@@ -15,12 +16,11 @@ const CssTransform = () => {
       <Head>
         <title>CSS Transform</title>
       </Head>
-
       <Theme>
+        <Navbar />
         <BackTo backTo={"blogs"} />
-
-        <div className="layoutContainer">
-          <div className="layoutBox1">
+        <div className="layoutContainer top-[84px] fixed">
+          <div className="layoutBox1 overflow-y-scroll">
             <div>
               <h1 className="blog-heading">CSS Transform</h1>
               <p className="text-lg text-gray-600 my-2">
@@ -49,13 +49,6 @@ const CssTransform = () => {
               setValue2={setValue2}
               value2={value2}
             />
-          </div>
-
-          <div className="layoutBox2">
-            <p className="text-center">
-              &quot;College or Degree can&apos;t define you and can&apos;t
-              decide What you can do?.&quot;
-            </p>
           </div>
         </div>
       </Theme>
@@ -97,7 +90,7 @@ const Exa1 = ({ value1, setValue1, direction1, setDirection1 }) => {
       <div
         className="box1 m-auto mt-5 sm:w-[200px] sm:h-[200px] w-[50px] h-[50px] bg-blue-600"
         style={{ transform: `translate${direction1}(${value1}px)` }}
-       />
+      />
     </div>
   );
 };
@@ -172,7 +165,7 @@ const Exa2 = ({ value2, setValue2, direction2, setDirection2 }) => {
       <div
         className="box2 m-auto mt-5 sm:w-[200px] sm:h-[200px] w-[50px] h-[50px] bg-blue-600"
         style={{ transform: `rotate${direction2}(${value2}deg)` }}
-       />
+      />
     </div>
   );
 };

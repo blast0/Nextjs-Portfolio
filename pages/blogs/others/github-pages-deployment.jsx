@@ -6,6 +6,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import Theme from "@/utils/Theme";
 import BackTo from "@/components/buttons/BackTo";
 import { ThemeContext } from "@/context/themeContext";
+import Navbar from "@/layout/navbar/Navbar";
 
 const GithubPagesDeploy = () => {
   const { theme } = useContext(ThemeContext);
@@ -17,13 +18,13 @@ const GithubPagesDeploy = () => {
       </Head>
 
       <Theme>
+        <Navbar />
         <BackTo backTo={"blogs"} />
+        <div className="layoutContainer top-[84px] fixed">
+          <div className="layoutBox1 overflow-y-scroll">
+            <h1 className="blog-heading">React Deployment on Github Page</h1>
 
-        <div className='layoutContainer'>
-          <div className='layoutBox1'>
-            <h1 className='blog-heading'>React Deployment on Github Page</h1>
-
-            <div className='bg-gray-200 my-4 p-2 rounded dark:bg-black'>
+            <div className="bg-gray-200 my-4 p-2 rounded dark:bg-black">
               {" "}
               <strong>Note:- </strong> Before going to deploy a{" "}
               <strong>react app</strong> on Github Pages you should know github
@@ -37,10 +38,8 @@ const GithubPagesDeploy = () => {
             <StepThree myDark={theme === "dark"} />
             <StepFour myDark={theme === "dark"} />
 
-            <div className='text-center m-5 text-2xl'>❤️ Thank You 🙏</div>
+            <div className="text-center m-5 text-2xl">❤️ Thank You 🙏</div>
           </div>
-
-          <div className='layoutBox2'>Hello</div>
         </div>
       </Theme>
     </Fragment>
@@ -55,19 +54,19 @@ const StepOne = ({ myDark }) => {
 
   return (
     <>
-      <div className='mt-8 mb-3 font-bold text-lg'>
+      <div className="mt-8 mb-3 font-bold text-lg">
         1. Add{" "}
-        <span className='text-sm text-bold px-1 dark:bg-zinc-700 bg-zinc-200 rounded-sm'>
+        <span className="text-sm text-bold px-1 dark:bg-zinc-700 bg-zinc-200 rounded-sm">
           homepage
         </span>{" "}
         to{" "}
-        <span className='text-sm text-bold px-1 dark:bg-zinc-700 bg-zinc-200 rounded-sm'>
+        <span className="text-sm text-bold px-1 dark:bg-zinc-700 bg-zinc-200 rounded-sm">
           package.json
         </span>{" "}
         file.
       </div>
 
-      <SyntaxHighlighter language='javascript' style={myDark ? dark : github}>
+      <SyntaxHighlighter language="javascript" style={myDark ? dark : github}>
         {codeString}
       </SyntaxHighlighter>
     </>
@@ -80,19 +79,19 @@ const StepTwo = ({ myDark }) => {
 
   return (
     <>
-      <div className='mt-8 mb-3 font-bold text-lg'>
+      <div className="mt-8 mb-3 font-bold text-lg">
         2. Install{" "}
-        <span className='text-sm text-bold px-1 dark:bg-zinc-700 bg-zinc-200 rounded-sm'>
+        <span className="text-sm text-bold px-1 dark:bg-zinc-700 bg-zinc-200 rounded-sm">
           gh-pages
         </span>{" "}
         .
       </div>
 
-      <SyntaxHighlighter language='javascript' style={myDark ? dark : github}>
+      <SyntaxHighlighter language="javascript" style={myDark ? dark : github}>
         {codeString1}
       </SyntaxHighlighter>
-      <p className='text-center'>OR</p>
-      <SyntaxHighlighter language='javascript' style={myDark ? dark : github}>
+      <p className="text-center">OR</p>
+      <SyntaxHighlighter language="javascript" style={myDark ? dark : github}>
         {codeString2}
       </SyntaxHighlighter>
     </>
@@ -105,23 +104,23 @@ const StepThree = ({ myDark }) => {
 
   return (
     <>
-      <div className='mt-8 mb-3 font-bold text-lg'>
+      <div className="mt-8 mb-3 font-bold text-lg">
         3. Add{" "}
-        <span className='text-sm text-bold px-1 dark:bg-zinc-700 bg-zinc-200 rounded-sm'>
+        <span className="text-sm text-bold px-1 dark:bg-zinc-700 bg-zinc-200 rounded-sm">
           deploy
         </span>{" "}
         to
-        <span className='text-sm text-bold px-1 dark:bg-zinc-700 bg-zinc-200 rounded-sm'>
+        <span className="text-sm text-bold px-1 dark:bg-zinc-700 bg-zinc-200 rounded-sm">
           scripts
         </span>{" "}
         in
-        <span className='text-sm text-bold px-1 dark:bg-zinc-700 bg-zinc-200 rounded-sm'>
+        <span className="text-sm text-bold px-1 dark:bg-zinc-700 bg-zinc-200 rounded-sm">
           package.json
         </span>{" "}
         .
       </div>
 
-      <SyntaxHighlighter language='javascript' style={myDark ? dark : github}>
+      <SyntaxHighlighter language="javascript" style={myDark ? dark : github}>
         {codeString}
       </SyntaxHighlighter>
     </>
@@ -133,15 +132,15 @@ const StepFour = ({ myDark }) => {
 
   return (
     <>
-      <div className='mt-8 mb-3 font-bold text-lg'>
+      <div className="mt-8 mb-3 font-bold text-lg">
         4. Deploy the site by running{" "}
-        <span className='text-sm text-bold px-1 dark:bg-zinc-700 bg-zinc-200 rounded-sm'>
+        <span className="text-sm text-bold px-1 dark:bg-zinc-700 bg-zinc-200 rounded-sm">
           npm run deploy
         </span>{" "}
         .
       </div>
 
-      <SyntaxHighlighter language='javascript' style={myDark ? dark : github}>
+      <SyntaxHighlighter language="javascript" style={myDark ? dark : github}>
         {codeString}
       </SyntaxHighlighter>
     </>

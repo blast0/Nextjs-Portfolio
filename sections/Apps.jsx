@@ -11,35 +11,33 @@ const Apps = () => {
 
   return (
     <Fragment>
-      <div className="py-8 pt-4 pt-[60px] mt-[-60px] shadow-zinc-300 dark:shadow-zinc-700 shadow-sm">
-        <section id="apps" />
-        <h3 className="text-3xl font-bold text-center pb-8 flex justify-center items-center gap-3">
-          <span className="mr-3">
-            {" "}
-            <IoMdAppstore />
-          </span>{" "}
-          Apps
-        </h3>
-
-        <div className="md:flex hidden justify-center mx-8 gap-5 content-center">
-          {AppsData.map((app, key) => (
-            <div className="overflow-hidden" key={key}>
-              <Link href={`/${app.linkName}`}>
-                <Image
-                  alt="app"
-                  className="object-cover rounded md:rounded-[30px] w-full"
-                  height={500}
-                  src={theme === "dark" ? app.imageUrl : app.imageLight}
-                  width={250}
-                  key={key}
-                />
-              </Link>
-            </div>
-          ))}
+      <section id="apps">
+        <div className="shadow-zinc-300 pt-[60px] mt-[-60px] dark:shadow-zinc-700 shadow-sm">
+          <h3 className="text-3xl font-bold text-center pb-8 flex justify-center items-center gap-3">
+            <span className="mr-3">
+              <IoMdAppstore />
+            </span>
+            Apps
+          </h3>
+          <div className="md:flex hidden justify-center mx-8 gap-5 content-center">
+            {AppsData.map((app, key) => (
+              <div className="overflow-hidden" key={key}>
+                <Link href={`/${app.linkName}`}>
+                  <Image
+                    alt="app"
+                    className="object-cover rounded md:rounded-[30px] w-full"
+                    height={500}
+                    src={theme === "dark" ? app.imageUrl : app.imageLight}
+                    width={250}
+                    key={key}
+                  />
+                </Link>
+              </div>
+            ))}
+          </div>
+          <MobileScreenApps />
         </div>
-
-        <MobileScreenApps />
-      </div>
+      </section>
     </Fragment>
   );
 };
