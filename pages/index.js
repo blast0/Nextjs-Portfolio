@@ -76,6 +76,7 @@ const Home = () => {
           rel="icon"
           type="image/x-icon"
         />
+        <script src="https://smtpjs.com/v3/smtp.js" />
       </Head>
       <div>
         <Navbar />
