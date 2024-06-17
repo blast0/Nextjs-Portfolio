@@ -39,4 +39,12 @@ export const AppsData = [
     linkName: "apps/news-app",
     date: "June 23, 2023",
   },
+  // {
+  //   name: "Image Builder App",
+  //   imageUrl: "/images/FabricEditor.png",
+  //   imageLight: "/images/FabricEditor.png",
+  //   iconUrl: "/images/newsapp.jpg",
+  //   linkName: "apps/news-app",
+  //   date: "June 23, 2023",
+  // },
 ];
