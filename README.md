@@ -1,6 +1,7 @@
 # Bishal's Portfolio [Live](https://bishalkumar-sde.netlify.app) - 👌 Best NextJS Portfolio
 
 ![Welcome Screen](./ss.gif)
+![Welcome Screen](./ss2.gif)
 
 ## Table of content
 
